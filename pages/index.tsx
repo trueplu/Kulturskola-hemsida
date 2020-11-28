@@ -15,6 +15,32 @@ import Image from 'next/image'
 import Layout from '../layouts/Layout'
 import { formLink, email } from '../shared/constants'
 
+const PrimaryCTA = () => (
+    <NextLink href={formLink} passHref>
+        <Button
+            size="lg"
+            mt="8"
+            as="a"
+            target="_blank"
+            rel="noopener"
+            color="black"
+            bg="#ffe156"
+            transition="none"
+            _hover={{
+                bg: '#FFD20A',
+            }}
+            _pressed={{
+                bg: '#F5C800',
+            }}
+            _active={{
+                bg: '#F5C800',
+            }}
+        >
+            Skicka in ditt bidrag!
+        </Button>
+    </NextLink>
+)
+
 const Index = () => {
     return (
         <>
@@ -29,28 +55,7 @@ const Index = () => {
                         dit?
                     </Text>
 
-                    <NextLink href={formLink} passHref>
-                        <Button
-                            mt="8"
-                            as="a"
-                            target="_blank"
-                            rel="noopener"
-                            color="black"
-                            bg="#ffe156"
-                            transition="none"
-                            _hover={{
-                                bg: '#FFD20A',
-                            }}
-                            _pressed={{
-                                bg: '#F5C800',
-                            }}
-                            _active={{
-                                bg: '#F5C800',
-                            }}
-                        >
-                            Skicka in ditt bidrag!
-                        </Button>
-                    </NextLink>
+                    <PrimaryCTA />
 
                     <Box mt="8" p="4">
                         {/* Idea: remove flower and center image */}
@@ -145,6 +150,10 @@ const Index = () => {
                         Så, vilken framtid vill du leva i och hur gör vi för att
                         nå dit?
                     </Text>
+
+                    <Center>
+                        <PrimaryCTA />
+                    </Center>
                 </Box>
 
                 <Divider maxW="xs" my="8" mx="auto" />
