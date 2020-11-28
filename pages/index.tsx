@@ -78,6 +78,15 @@ const Index = () => {
                             fler till att engagera sig för en hållbar framtid.
                         </Text>
                     </Box>
+                    <Center mt="8" p="4">
+                        <Image
+                            src="/images/undraw_new_ideas_jdea.svg"
+                            alt="TODO"
+                            width="300"
+                            height="300"
+                        />
+                    </Center>
+
                     <Box mt="8">
                         <Heading as="h2" size="lg">
                             Noveller och dikter för framtiden
@@ -93,6 +102,16 @@ const Index = () => {
                             samarbetspartners och kan läsas gratis.
                         </Text>
                     </Box>
+
+                    <Center mt="8" p="4">
+                        <Image
+                            src="/images/undraw_dream_world_cin1.svg"
+                            alt="TODO"
+                            width="300"
+                            height="300"
+                        />
+                    </Center>
+
                     <Box mt="8">
                         <Heading as="h2" size="lg">
                             Varför ska du delta i projektet?
@@ -106,7 +125,21 @@ const Index = () => {
                         </UnorderedList>
                     </Box>
 
-                    <Text fontWeight="bold" mt="8" textAlign="center">
+                    <Center mt="8" p="4">
+                        <Image
+                            src="/images/undraw_thought_process_67my.svg"
+                            alt="TODO"
+                            width="300"
+                            height="300"
+                        />
+                    </Center>
+
+                    <Text
+                        fontWeight="bold"
+                        mt="8"
+                        textAlign="center"
+                        fontSize="2xl"
+                    >
                         Så, vilken framtid vill du leva i och hur gör vi för att
                         nå dit?
                     </Text>

@@ -15,7 +15,7 @@ export const theme = extendTheme({
                 backgroundPosition: '50%',
                 backgroundRepeat: 'no-repeat',
                 backgroundAttachment: 'fixed',
-                color: '#fff',
+                color: '#FBFEF9',
             },
         },
     },
