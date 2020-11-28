@@ -58,10 +58,9 @@ const Index = () => {
                     <PrimaryCTA />
 
                     <Box mt="8" p="4">
-                        {/* Idea: remove flower and center image */}
                         <Image
                             src="/images/undraw_the_world_is_mine_nb0e.svg"
-                            alt="TODO"
+                            alt="Woman carrying planet Earth on her shoulders"
                             width="300"
                             height="300"
                         />
@@ -88,7 +87,7 @@ const Index = () => {
                     <Center mt="8" p="4">
                         <Image
                             src="/images/undraw_new_ideas_jdea.svg"
-                            alt="TODO"
+                            alt="Woman holding out her hand with a large lightbulb to represent new ideas"
                             width="300"
                             height="300"
                         />
@@ -113,7 +112,7 @@ const Index = () => {
                     <Center mt="8" p="4">
                         <Image
                             src="/images/undraw_dream_world_cin1.svg"
-                            alt="TODO"
+                            alt="Woman planting seeds that grow into a dream world"
                             width="300"
                             height="300"
                         />
@@ -135,7 +134,7 @@ const Index = () => {
                     <Center mt="8" p="4">
                         <Image
                             src="/images/undraw_thought_process_67my.svg"
-                            alt="TODO"
+                            alt="Man brainstorming, thinking and organizing new ideas"
                             width="300"
                             height="300"
                         />
@@ -156,7 +155,7 @@ const Index = () => {
                     </Center>
                 </Box>
 
-                <Divider maxW="xs" my="8" mx="auto" />
+                <Divider maxW="xs" my="16" mx="auto" />
 
                 <Box maxW="xl" mx="auto">
                     <Heading as="h2" size="lg">
@@ -188,7 +187,9 @@ const Index = () => {
                 </Box>
 
                 <Box maxW="xl" mt="8" mx="auto">
-                    <Heading>Format för novell och dikt:</Heading>
+                    <Heading as="h2" size="lg">
+                        Format för novell och dikt:
+                    </Heading>
                     <UnorderedList>
                         <ListItem>Times New Roman typsnitt 12</ListItem>
                         <ListItem>Språk: Svenska</ListItem>
@@ -196,7 +197,7 @@ const Index = () => {
                     </UnorderedList>
                 </Box>
 
-                <Divider maxW="xs" my="8" mx="auto" />
+                <Divider maxW="xs" my="16" mx="auto" />
 
                 <Box maxW="xl" mx="auto" mb="12">
                     <Text>
@@ -213,9 +214,10 @@ const Index = () => {
                             Rättigheter:{' '}
                         </Text>
                         Genom att skicka in novellen eller dikten får
-                        Klimatprata ditt godkännande att publicera texten i sina
-                        kanaler, i samarbets kanaler och i tryck. Ditt
-                        namn/pseudonym kommer att publiceras med texten.{' '}
+                        FutureVisions.earth ditt godkännande att publicera
+                        texten i sina kanaler, hos samarbetspartners och i
+                        tryck. Ditt namn/pseudonym kommer att publiceras med
+                        texten.{' '}
                     </Text>
                 </Box>
             </Layout>
