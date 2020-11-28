@@ -20,9 +20,11 @@ const Index = () => {
         <>
             <Layout>
                 <Center flexDirection="column">
-                    <Heading as="h1">FutureVisions.earth</Heading>
+                    <Heading as="h1" size="3xl">
+                        FutureVisions.earth
+                    </Heading>
 
-                    <Text mt="4">
+                    <Text mt="4" fontSize="xl">
                         Vilken framtid vill du leva i och hur gör vi för att nå
                         dit?
                     </Text>
@@ -33,17 +35,17 @@ const Index = () => {
                             as="a"
                             target="_blank"
                             rel="noopener"
-                            color="white"
-                            bg="teal.600"
+                            color="black"
+                            bg="#ffe156"
                             transition="none"
                             _hover={{
-                                bg: 'teal.700',
+                                bg: '#FFD20A',
                             }}
                             _pressed={{
-                                bg: 'teal.800',
+                                bg: '#F5C800',
                             }}
                             _active={{
-                                bg: 'teal.800',
+                                bg: '#F5C800',
                             }}
                         >
                             Skicka in ditt bidrag!
@@ -147,7 +149,7 @@ const Index = () => {
 
                 <Divider maxW="xs" my="8" mx="auto" />
 
-                <Box maxW="xl" mx="auto" mb="12">
+                <Box maxW="xl" mx="auto">
                     <Heading as="h2" size="lg">
                         Hur går det till?
                     </Heading>
@@ -174,6 +176,38 @@ const Index = () => {
                             <Link href={'mailto:' + email}>{email}</Link>
                         </ListItem>
                     </UnorderedList>
+                </Box>
+
+                <Box maxW="xl" mt="8" mx="auto">
+                    <Heading>Format för novell och dikt:</Heading>
+                    <UnorderedList>
+                        <ListItem>Times New Roman typsnitt 12</ListItem>
+                        <ListItem>Språk: Svenska</ListItem>
+                        <ListItem>Max 1250 ord</ListItem>
+                    </UnorderedList>
+                </Box>
+
+                <Divider maxW="xs" my="8" mx="auto" />
+
+                <Box maxW="xl" mx="auto" mb="12">
+                    <Text>
+                        <Text fontWeight="bold" as="span">
+                            Restriktioner:{' '}
+                        </Text>
+                        Novellen/dikten får inte vara publicerad sedan tidigare
+                        i varken tryckt eller digitalt format. Den som lämnar in
+                        försäkrar sig om att hen skrivit novellen/dikten. Max 2
+                        bidrag per person.
+                    </Text>
+                    <Text mt="4">
+                        <Text fontWeight="bold" as="span">
+                            Rättigheter:{' '}
+                        </Text>
+                        Genom att skicka in novellen eller dikten får
+                        Klimatprata ditt godkännande att publicera texten i sina
+                        kanaler, i samarbets kanaler och i tryck. Ditt
+                        namn/pseudonym kommer att publiceras med texten.{' '}
+                    </Text>
                 </Box>
             </Layout>
         </>
