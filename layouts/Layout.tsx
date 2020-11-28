@@ -14,7 +14,7 @@ interface MetaProps {
 }
 
 const defaultMeta = {
-    title: 'Klimatnytt-nätverket',
+    title: 'FutureVisions.earth 🌍',
     description: '',
 }
 
@@ -35,7 +35,7 @@ export default function Layout({ children, meta = {} }: LayoutProps) {
                 <title>{title}</title>
             </Head>
             <Header />
-            <Container mt="8" maxW="xl">
+            <Container mt="8" maxW="xl" bg="teal.50">
                 {children}
             </Container>
         </>
