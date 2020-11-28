@@ -45,12 +45,15 @@ const Index = () => {
     return (
         <>
             <Layout>
-                <Center flexDirection="column">
-                    <Heading as="h1" size="3xl">
+                <Center flexDirection="column" textAlign="center">
+                    <Heading
+                        as="h1"
+                        fontSize={['35px', '40px', '50px', '60px']}
+                    >
                         FutureVisions.earth
                     </Heading>
 
-                    <Text mt="4" fontSize="xl">
+                    <Text mt="4" fontSize={['lg', null, null, 'xl']}>
                         Vilken framtid vill du leva i och hur gör vi för att nå
                         dit?
                     </Text>
@@ -68,11 +71,14 @@ const Index = () => {
                 </Center>
 
                 <Box maxW="xl" mt="8" mx="auto">
+                    <Heading as="h2" size="lg">
+                        Är du en ung framtidsvisionär?
+                    </Heading>
                     <Text>
-                        Är du en ung framtidsvisionär? Tillsammans utforskar vi
-                        vår kreativitet och skriver om den framtid vi vill kämpa
-                        för. Välkommen oavsett om du är kunnig och van att
-                        skriva - eller om du är nyfiken och vill lära dig mer!
+                        Tillsammans utforskar vi vår kreativitet och skriver om
+                        den framtid vi vill kämpa för. Välkommen oavsett om du
+                        är kunnig och van att skriva - eller om du är nyfiken
+                        och vill lära dig mer!
                     </Text>
                     <Box mt="4">
                         <Heading as="h2" size="lg">
@@ -199,7 +205,7 @@ const Index = () => {
 
                 <Divider maxW="xs" my="16" mx="auto" />
 
-                <Box maxW="xl" mx="auto" mb="12">
+                <Box maxW="xl" mx="auto" pb="12">
                     <Text>
                         <Text fontWeight="bold" as="span">
                             Restriktioner:{' '}
