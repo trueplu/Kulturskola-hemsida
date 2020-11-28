@@ -8,9 +8,9 @@ import {
     Text,
     Link,
     UnorderedList,
-    background,
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import Image from 'next/image'
 
 import Layout from '../layouts/Layout'
 
@@ -22,7 +22,7 @@ const Index = () => {
         <>
             <Layout>
                 <Center flexDirection="column">
-                    <Heading as="h1">FutureVisions.earth 🌍</Heading>
+                    <Heading as="h1">FutureVisions.earth</Heading>
 
                     <Text mt="4">
                         Vilken framtid vill du leva i och hur gör vi för att nå
@@ -51,13 +51,22 @@ const Index = () => {
                             Skicka in ditt bidrag!
                         </Button>
                     </NextLink>
+
+                    <Box mt="8" p="4">
+                        {/* Idea: remove flower and center image */}
+                        <Image
+                            src="/images/undraw_the_world_is_mine_nb0e.svg"
+                            alt="TODO"
+                            width="300"
+                            height="300"
+                        />
+                    </Box>
                 </Center>
 
                 <Box maxW="xl" mt="8" mx="auto">
                     <Text>
-                        Det här är ett kreativt projekt för unga
-                        framtidsvisionärer. Tillsammans utforskar vi vår
-                        kreativitet och skriver om den framtid vi vill kämpa
+                        Är du en ung framtidsvisionär? Tillsammans utforskar vi
+                        vår kreativitet och skriver om den framtid vi vill kämpa
                         för. Välkommen oavsett om du är kunnig och van att
                         skriva - eller om du är nyfiken och vill lära dig mer!
                     </Text>
@@ -107,7 +116,7 @@ const Index = () => {
 
                 <Divider maxW="xs" my="8" mx="auto" />
 
-                <Box maxW="xl" mx="auto">
+                <Box maxW="xl" mx="auto" mb="12">
                     <Heading as="h2" size="lg">
                         Hur går det till?
                     </Heading>

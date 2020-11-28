@@ -16,7 +16,7 @@ import { theme } from '../shared/theme'
 // )
 
 const Header = () => (
-    <Container as="header" maxW="xl" bg="teal.50">
+    <Container as="header" maxW="xl">
         <Flex justify="space-between" align="center" py="4">
             <NextLink href="/" passHref>
                 <Link
