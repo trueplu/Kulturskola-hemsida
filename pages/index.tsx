@@ -13,9 +13,7 @@ import NextLink from 'next/link'
 import Image from 'next/image'
 
 import Layout from '../layouts/Layout'
-
-const formLink = 'https://forms.gle/piqQmfycXCBam4c18'
-const email = 'futurevisions.earth@gmail.com'
+import { formLink, email } from '../shared/constants'
 
 const Index = () => {
     return (
