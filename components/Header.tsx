@@ -10,9 +10,7 @@ interface NavLinkProps {
 }
 const NavLink: React.FC<NavLinkProps> = ({ href, children }) => (
     <NextLink href={href} passHref>
-        <Link py="2" px="3">
-            {children}
-        </Link>
+        <Link p="4">{children}</Link>
     </NextLink>
 )
 
@@ -30,7 +28,7 @@ const Header = () => (
                 </Link>
             </NextLink>
 
-            <Stack direction="row" as="nav">
+            <Stack direction="row" as="nav" fontWeight="bold">
                 <NavLink href={'mailto:' + email}>Kontakta oss</NavLink>
             </Stack>
         </Flex>
