@@ -26,15 +26,20 @@ const IntroSection: FC<IntroSectionProps> = ({
         fontSize="20px"
         width="100%"
         mb="20"
-        p="4"
-        gridTemplateColumns={sides[imageSide]}
-        gap="4"
+        gridTemplateColumns={['1fr', null, sides[imageSide]]}
+        gap={[0, 0, 4]}
         {...props}
     >
-        <Box p="4" order={imageSide === 'right' ? 1 : 0}>
+        <Box
+            p="4"
+            order={[0, null, imageSide === 'right' ? 1 : 0]}
+            display="flex"
+            justifyContent="center"
+            alignSelf="center"
+        >
             <Image width={300} height={300} {...image} />
         </Box>
-        <Card textAlign="center">
+        <Card textAlign="center" mx={[0, 6, 0]}>
             <Heading as="h2" size="lg" mb="6">
                 {heading}
             </Heading>
