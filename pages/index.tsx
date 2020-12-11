@@ -7,12 +7,11 @@ import {
     Text,
     Link,
     UnorderedList,
-    Grid,
-    Flex,
 } from '@chakra-ui/react'
 import Image from 'next/image'
 
 import Card from '../components/Card'
+import IntroSection from '../components/IntroSection'
 import PrimaryCTA from '../components/PrimaryCTA'
 import Layout from '../layouts/Layout'
 import { formLink, email } from '../shared/constants'
@@ -38,15 +37,7 @@ const Index = () => {
                 </Center>
 
                 <Box maxW="4xl" mt="20" mx="auto">
-                    <Grid
-                        fontSize="20px"
-                        width="100%"
-                        height={['360px']}
-                        mb="20"
-                        p="4"
-                        gridTemplateColumns="2fr 3fr"
-                        gap="4"
-                    >
+                    <IntroSection imageSide="left">
                         <Box p="4">
                             <Image
                                 src="/images/undraw_new_ideas_jdea.svg"
@@ -67,17 +58,9 @@ const Index = () => {
                                 dig mer!
                             </Text>
                         </Card>
-                    </Grid>
+                    </IntroSection>
 
-                    <Grid
-                        fontSize="20px"
-                        width="100%"
-                        height={['360px']}
-                        mb="20"
-                        p="4"
-                        gridTemplateColumns="3fr 2fr"
-                        gap="4"
-                    >
+                    <IntroSection>
                         <Card textAlign="center">
                             <Heading as="h2" size="lg" mb="8">
                                 Varför skriva om framtiden?
@@ -99,17 +82,9 @@ const Index = () => {
                                 height="300"
                             />
                         </Box>
-                    </Grid>
+                    </IntroSection>
 
-                    <Grid
-                        fontSize="20px"
-                        width="100%"
-                        height={['360px']}
-                        mb="20"
-                        p="4"
-                        gridTemplateColumns="2fr 3fr"
-                        gap="4"
-                    >
+                    <IntroSection imageSide="left">
                         <Box p="4">
                             <Image
                                 src="/images/undraw_inspiration_lecl.svg"
@@ -134,17 +109,9 @@ const Index = () => {
                                 och kan läsas gratis.
                             </Text>
                         </Card>
-                    </Grid>
+                    </IntroSection>
 
-                    <Grid
-                        fontSize="20px"
-                        width="100%"
-                        height={['360px']}
-                        mb="20"
-                        p="4"
-                        gridTemplateColumns="3fr 2fr"
-                        gap="4"
-                    >
+                    <IntroSection>
                         <Card textAlign="center">
                             <Heading as="h2" size="lg" mb="6">
                                 För vem?
@@ -164,9 +131,9 @@ const Index = () => {
                                 height="300"
                             />
                         </Box>
-                    </Grid>
+                    </IntroSection>
 
-                    <Card>
+                    <Card mx="auto">
                         <Text
                             fontWeight="bold"
                             mt="8"
