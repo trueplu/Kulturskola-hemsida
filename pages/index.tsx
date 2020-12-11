@@ -38,11 +38,88 @@ const Index = () => {
                 </Center>
 
                 <Box maxW="4xl" mt="20" mx="auto">
-                    <Box>
-                        <Flex gap="8" justify="space-between">
+                    <Grid
+                        width="100%"
+                        height={['360px']}
+                        mb="20"
+                        p="4"
+                        gridTemplateColumns="2fr 3fr"
+                        gap="4"
+                    >
+                        <Box p="4">
+                            <Image
+                                src="/images/undraw_new_ideas_jdea.svg"
+                                alt="Woman holding out her hand with a large lightbulb to represent new ideas"
+                                width="300"
+                                height="300"
+                            />
+                        </Box>
+                        {/* <Box bg="#F86624" p="4"> */}
+                        <Card textAlign="center">
+                            <Heading as="h2" size="lg" mb="6">
+                                Är du en ung framtidsvisionär?
+                            </Heading>
+                            <Text>
+                                Tillsammans utforskar vi vår kreativitet och
+                                skriver om den framtid vi vill kämpa för.
+                                Välkommen oavsett om du är kunnig och van att
+                                skriva - eller om du är nyfiken och vill lära
+                                dig mer!
+                            </Text>
+                            <Box mt="4">
+                                <Heading as="h2" size="lg" mb="6">
+                                    För vem?
+                                </Heading>
+                                <Text>
+                                    Projektet är till för dig mellan 15 till 25
+                                    år som vill bidra med dina framtidsvisioner
+                                    och inspirera fler till att engagera sig för
+                                    en hållbar framtid.
+                                </Text>
+                            </Box>
+                        </Card>
+                        {/* </Box> */}
+                    </Grid>
+
+                    <Grid
+                        width="100%"
+                        height={['360px']}
+                        mb="20"
+                        p="4"
+                        gridTemplateColumns="3fr 2fr"
+                        gap="4"
+                    >
+                        <Box bg="#F86624" p="4">
+                            <Heading as="h2" size="lg">
+                                Noveller och dikter för framtiden
+                            </Heading>
+                            <Text>
+                                Genom att skriva om framtiden får du möjlighet
+                                att sätta ord på dina tankar och känslor. Vad
+                                ser du fram emot? Vilken framtid vill du leva i?
+                                Hur gör vi för att nå dit? Tio bidrag som
+                                skickats in senast den 14 februari kommer att
+                                väljas ut till en textsamling fylld av
+                                inspiration och framtidshopp. Texterna
+                                publiceras hos Klimatprata och samarbetspartners
+                                och kan läsas gratis.
+                            </Text>
+                        </Box>
+                        <Box p="4">
                             <Image
                                 src="/images/undraw_the_world_is_mine_nb0e.svg"
                                 alt="Woman carrying planet Earth on her shoulders"
+                                width="300"
+                                height="300"
+                            />
+                        </Box>
+                    </Grid>
+
+                    <Box>
+                        <Flex gap="8" justify="space-between">
+                            <Image
+                                src="/images/undraw_new_ideas_jdea.svg"
+                                alt="Woman holding out her hand with a large lightbulb to represent new ideas"
                                 width="300"
                                 height="300"
                             />
@@ -73,14 +150,13 @@ const Index = () => {
                     </Box>
 
                     <Image
-                        src="/images/undraw_new_ideas_jdea.svg"
-                        alt="Woman holding out her hand with a large lightbulb to represent new ideas"
+                        src="/images/undraw_the_world_is_mine_nb0e.svg"
+                        alt="Woman carrying planet Earth on her shoulders"
                         width="300"
                         height="300"
                     />
 
                     <Box mt="8">
-                        {/* <Card p="8"> */}
                         <Heading as="h2" size="lg">
                             Noveller och dikter för framtiden
                         </Heading>
@@ -94,7 +170,6 @@ const Index = () => {
                             Texterna publiceras hos Klimatprata och
                             samarbetspartners och kan läsas gratis.
                         </Text>
-                        {/* </Card> */}
                     </Box>
 
                     <Center mt="8" p="4">

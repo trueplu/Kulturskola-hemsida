@@ -9,7 +9,8 @@ const Card: FC<CardProps> = ({ children, ...props }) => (
         boxShadow="0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)"
         borderRadius="lg"
         p="5"
-        bg="white"
+        bg="rgba(255, 255, 255, .9)"
+        // bg="white"
         color="black"
         {...props}
     >
