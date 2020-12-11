@@ -1,6 +1,5 @@
 import {
     Box,
-    Button,
     Center,
     Divider,
     Heading,
@@ -8,44 +7,21 @@ import {
     Text,
     Link,
     UnorderedList,
+    Grid,
+    Flex,
 } from '@chakra-ui/react'
-import NextLink from 'next/link'
 import Image from 'next/image'
 
+import Card from '../components/Card'
+import PrimaryCTA from '../components/PrimaryCTA'
 import Layout from '../layouts/Layout'
 import { formLink, email } from '../shared/constants'
-
-const PrimaryCTA = () => (
-    <NextLink href={formLink} passHref>
-        <Button
-            size="lg"
-            mt="8"
-            as="a"
-            target="_blank"
-            rel="noopener"
-            color="black"
-            bg="#ffe156"
-            transition="none"
-            _hover={{
-                bg: '#FFD20A',
-            }}
-            _pressed={{
-                bg: '#F5C800',
-            }}
-            _active={{
-                bg: '#F5C800',
-            }}
-        >
-            Skicka in ditt bidrag!
-        </Button>
-    </NextLink>
-)
 
 const Index = () => {
     return (
         <>
             <Layout>
-                <Center flexDirection="column" textAlign="center">
+                <Center flexDirection="column" textAlign="center" mb="20">
                     <Heading
                         as="h1"
                         fontSize={['35px', '40px', '50px', '60px']}
@@ -53,53 +29,58 @@ const Index = () => {
                         FutureVisions.earth
                     </Heading>
 
-                    <Text mt="4" fontSize={['lg', null, null, 'xl']}>
+                    <Text mt="4" mb="4" fontSize={['lg', null, null, 'xl']}>
                         Vilken framtid vill du leva i och hur gör vi för att nå
                         dit?
                     </Text>
 
                     <PrimaryCTA />
-
-                    <Box mt="8" p="4">
-                        <Image
-                            src="/images/undraw_the_world_is_mine_nb0e.svg"
-                            alt="Woman carrying planet Earth on her shoulders"
-                            width="300"
-                            height="300"
-                        />
-                    </Box>
                 </Center>
 
-                <Box maxW="xl" mt="8" mx="auto">
-                    <Heading as="h2" size="lg">
-                        Är du en ung framtidsvisionär?
-                    </Heading>
-                    <Text>
-                        Tillsammans utforskar vi vår kreativitet och skriver om
-                        den framtid vi vill kämpa för. Välkommen oavsett om du
-                        är kunnig och van att skriva - eller om du är nyfiken
-                        och vill lära dig mer!
-                    </Text>
-                    <Box mt="4">
-                        <Heading as="h2" size="lg">
-                            För vem?
-                        </Heading>
-                        <Text>
-                            Projektet är till för dig mellan 15 till 25 år som
-                            vill bidra med dina framtidsvisioner och inspirera
-                            fler till att engagera sig för en hållbar framtid.
-                        </Text>
+                <Box maxW="4xl" mt="20" mx="auto">
+                    <Box>
+                        <Flex gap="8" justify="space-between">
+                            <Image
+                                src="/images/undraw_the_world_is_mine_nb0e.svg"
+                                alt="Woman carrying planet Earth on her shoulders"
+                                width="300"
+                                height="300"
+                            />
+                            <Box maxW="md">
+                                <Heading as="h2" size="lg">
+                                    Är du en ung framtidsvisionär?
+                                </Heading>
+                                <Text>
+                                    Tillsammans utforskar vi vår kreativitet och
+                                    skriver om den framtid vi vill kämpa för.
+                                    Välkommen oavsett om du är kunnig och van
+                                    att skriva - eller om du är nyfiken och vill
+                                    lära dig mer!
+                                </Text>
+                                <Box mt="4">
+                                    <Heading as="h2" size="lg">
+                                        För vem?
+                                    </Heading>
+                                    <Text>
+                                        Projektet är till för dig mellan 15 till
+                                        25 år som vill bidra med dina
+                                        framtidsvisioner och inspirera fler till
+                                        att engagera sig för en hållbar framtid.
+                                    </Text>
+                                </Box>
+                            </Box>
+                        </Flex>
                     </Box>
-                    <Center mt="8" p="4">
-                        <Image
-                            src="/images/undraw_new_ideas_jdea.svg"
-                            alt="Woman holding out her hand with a large lightbulb to represent new ideas"
-                            width="300"
-                            height="300"
-                        />
-                    </Center>
+
+                    <Image
+                        src="/images/undraw_new_ideas_jdea.svg"
+                        alt="Woman holding out her hand with a large lightbulb to represent new ideas"
+                        width="300"
+                        height="300"
+                    />
 
                     <Box mt="8">
+                        {/* <Card p="8"> */}
                         <Heading as="h2" size="lg">
                             Noveller och dikter för framtiden
                         </Heading>
@@ -113,6 +94,7 @@ const Index = () => {
                             Texterna publiceras hos Klimatprata och
                             samarbetspartners och kan läsas gratis.
                         </Text>
+                        {/* </Card> */}
                     </Box>
 
                     <Center mt="8" p="4">
