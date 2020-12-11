@@ -1,5 +1,8 @@
-import { GridProps, Grid } from '@chakra-ui/react'
+import { GridProps, Grid, Box, Text, Heading } from '@chakra-ui/react'
+import Image, { ImageProps } from 'next/image'
 import { FC } from 'react'
+
+import Card from './Card'
 
 const sides = {
     left: '2fr 3fr',
@@ -7,12 +10,16 @@ const sides = {
 }
 
 interface IntroSectionProps extends GridProps {
-    children: React.ReactNode
     imageSide?: keyof typeof sides
+    image: Pick<ImageProps, 'alt' | 'src'>
+    heading: string
+    content: React.ReactNode
 }
 const IntroSection: FC<IntroSectionProps> = ({
-    children,
     imageSide = 'right',
+    image,
+    heading,
+    content,
     ...props
 }) => (
     <Grid
@@ -24,7 +31,15 @@ const IntroSection: FC<IntroSectionProps> = ({
         gap="4"
         {...props}
     >
-        {children}
+        <Box p="4" order={imageSide === 'right' ? 1 : 0}>
+            <Image width={300} height={300} {...image} />
+        </Box>
+        <Card textAlign="center">
+            <Heading as="h2" size="lg" mb="6">
+                {heading}
+            </Heading>
+            {content}
+        </Card>
     </Grid>
 )
 

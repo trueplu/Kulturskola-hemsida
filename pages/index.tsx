@@ -37,19 +37,15 @@ const Index = () => {
                 </Center>
 
                 <Box maxW="4xl" mt="20" mx="auto">
-                    <IntroSection imageSide="left">
-                        <Box p="4">
-                            <Image
-                                src="/images/undraw_new_ideas_jdea.svg"
-                                alt="Woman holding out her hand with a large lightbulb to represent new ideas"
-                                width="300"
-                                height="300"
-                            />
-                        </Box>
-                        <Card textAlign="center">
-                            <Heading as="h2" size="lg" mb="6">
-                                Är du en ung framtidsvisionär?
-                            </Heading>
+                    <IntroSection
+                        imageSide="left"
+                        image={{
+                            src: '/images/undraw_new_ideas_jdea.svg',
+                            alt:
+                                'Woman holding out her hand with a large lightbulb to represent new ideas',
+                        }}
+                        heading="Är du en ung framtidsvisionär?"
+                        content={
                             <Text>
                                 Tillsammans utforskar vi vår kreativitet och
                                 skriver om den framtid vi vill kämpa för.
@@ -57,14 +53,18 @@ const Index = () => {
                                 skriva - eller om du är nyfiken och vill lära
                                 dig mer!
                             </Text>
-                        </Card>
-                    </IntroSection>
+                        }
+                    />
 
-                    <IntroSection>
-                        <Card textAlign="center">
-                            <Heading as="h2" size="lg" mb="8">
-                                Varför skriva om framtiden?
-                            </Heading>
+                    <IntroSection
+                        imageSide="right"
+                        image={{
+                            src: '/images/undraw_dream_world_cin1.svg',
+                            alt:
+                                'Woman planting seeds that grow into a dream world',
+                        }}
+                        heading="Varför skriva om framtiden?"
+                        content={
                             <UnorderedList>
                                 <ListItem>Hopp om framtiden</ListItem>
                                 <ListItem>Gemenskap</ListItem>
@@ -73,79 +73,60 @@ const Index = () => {
                                     publicerad
                                 </ListItem>
                             </UnorderedList>
-                        </Card>
-                        <Box p="4">
-                            <Image
-                                src="/images/undraw_dream_world_cin1.svg"
-                                alt="Woman planting seeds that grow into a dream world"
-                                width="300"
-                                height="300"
-                            />
-                        </Box>
-                    </IntroSection>
+                        }
+                    />
 
-                    <IntroSection imageSide="left">
-                        <Box p="4">
-                            <Image
-                                src="/images/undraw_inspiration_lecl.svg"
-                                alt="Man finding inspiration"
-                                width="300"
-                                height="300"
-                            />
-                        </Box>
-                        <Card textAlign="center">
-                            <Heading as="h2" size="lg" mb="6">
-                                Noveller och dikter för framtiden
-                            </Heading>
+                    <IntroSection
+                        imageSide="left"
+                        image={{
+                            src: '/images/undraw_inspiration_lecl.svg',
+                            alt: 'Man finding inspiration',
+                        }}
+                        heading="Noveller och dikter för framtiden"
+                        content={
                             <Text>
                                 Genom att skriva om framtiden får du möjlighet
                                 att sätta ord på dina tankar och känslor. Vad
                                 ser du fram emot? Vilken framtid vill du leva i?
-                                Hur gör vi för att nå dit? Tio bidrag som
-                                skickats in senast den 14 februari kommer att
-                                väljas ut till en textsamling fylld av
-                                inspiration och framtidshopp. Texterna
-                                publiceras hos Klimatprata och samarbetspartners
-                                och kan läsas gratis.
+                                Hur gör vi för att nå dit?
                             </Text>
-                        </Card>
-                    </IntroSection>
+                        }
+                    />
 
-                    <IntroSection>
-                        <Card textAlign="center">
-                            <Heading as="h2" size="lg" mb="6">
-                                För vem?
-                            </Heading>
+                    <IntroSection
+                        imageSide="right"
+                        image={{
+                            src: '/images/undraw_thought_process_67my.svg',
+                            alt:
+                                'Man brainstorming, thinking and organizing new ideas',
+                        }}
+                        heading="För vem?"
+                        content={
                             <Text>
                                 Projektet är till för dig mellan 15 till 25 år
                                 som vill bidra med dina framtidsvisioner och
                                 inspirera fler till att engagera sig för en
                                 hållbar framtid.
                             </Text>
-                        </Card>
-                        <Box p="4">
-                            <Image
-                                src="/images/undraw_thought_process_67my.svg"
-                                alt="Man brainstorming, thinking and organizing new ideas"
-                                width="300"
-                                height="300"
-                            />
-                        </Box>
-                    </IntroSection>
+                        }
+                    />
 
-                    <Card mx="auto">
-                        <Text
-                            fontWeight="bold"
-                            mt="8"
-                            textAlign="center"
-                            fontSize="2xl"
-                        >
+                    <Card mx="auto" textAlign="center">
+                        <Text fontWeight="bold" fontSize="2xl">
                             Så, vilken framtid vill du leva i och hur gör vi för
                             att nå dit?
                         </Text>
 
+                        <Text mt="8" fontSize="20px">
+                            Tio bidrag som skickats in senast den 14 februari
+                            kommer att väljas ut till en textsamling fylld av
+                            inspiration och framtidshopp. Texterna publiceras
+                            hos Klimatprata och samarbetspartners och kan läsas
+                            gratis.
+                        </Text>
+
                         <Center>
-                            <PrimaryCTA />
+                            <PrimaryCTA mb="4" />
                         </Center>
                     </Card>
                 </Box>

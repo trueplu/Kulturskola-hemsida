@@ -8,9 +8,8 @@ const Card: FC<CardProps> = ({ children, ...props }) => (
     <Box
         boxShadow="0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)"
         borderRadius="lg"
-        p="8"
+        p={[6, null, null, 8]}
         bg="rgba(255, 255, 255, .9)"
-        // bg="white"
         color="black"
         {...props}
     >
