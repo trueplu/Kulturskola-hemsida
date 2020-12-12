@@ -9,12 +9,6 @@ export const theme = extendTheme({
     styles: {
         global: {
             'html, body': {
-                background: 'transparent',
-                backgroundImage: 'linear-gradient(25deg, #61983b, #009eea)',
-                backgroundSize: 'cover',
-                backgroundPosition: '50%',
-                backgroundRepeat: 'no-repeat',
-                backgroundAttachment: 'fixed',
                 color: '#FBFEF9',
             },
         },

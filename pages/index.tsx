@@ -8,7 +8,6 @@ import {
     Link,
     UnorderedList,
 } from '@chakra-ui/react'
-import Image from 'next/image'
 
 import Card from '../components/Card'
 import IntroSection from '../components/IntroSection'
