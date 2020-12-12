@@ -46,11 +46,9 @@ const Index = () => {
                         heading="Är du en ung framtidsvisionär?"
                         content={
                             <Text>
-                                Tillsammans utforskar vi vår kreativitet och
-                                skriver om den framtid vi vill kämpa för.
-                                Välkommen oavsett om du är kunnig och van att
-                                skriva - eller om du är nyfiken och vill lära
-                                dig mer!
+                                Utforska din kreativitet och skriv om den värld
+                                du vill kämpa för. Välkommen att delta oavsett
+                                om du är van skribent eller bara nyfiken!
                             </Text>
                         }
                     />
@@ -62,14 +60,21 @@ const Index = () => {
                             alt:
                                 'Woman planting seeds that grow into a dream world',
                         }}
-                        heading="Varför skriva om framtiden?"
+                        heading="Varför skriva framtidsvisioner?"
                         content={
                             <UnorderedList>
-                                <ListItem>Hopp om framtiden</ListItem>
-                                <ListItem>Gemenskap</ListItem>
                                 <ListItem>
-                                    Chans att din dikt eller novell blir
-                                    publicerad
+                                    Det skapar en konkret bild vilket kan
+                                    inbringa hopp och handlingskraft
+                                </ListItem>
+                                <ListItem>
+                                    Dela sina visioner med andra och få nya
+                                    outforskade idéer
+                                </ListItem>
+                                <ListItem>
+                                    Handlingar som sker nu påverkar framtiden.
+                                    Därför måste vi visualisera den framtiden
+                                    vill ha och agera där efter
                                 </ListItem>
                             </UnorderedList>
                         }
@@ -83,12 +88,14 @@ const Index = () => {
                         }}
                         heading="Noveller och dikter för framtiden"
                         content={
-                            <Text>
-                                Genom att skriva om framtiden får du möjlighet
-                                att sätta ord på dina tankar och känslor. Vad
-                                ser du fram emot? Vilken framtid vill du leva i?
-                                Hur gör vi för att nå dit?
-                            </Text>
+                            <>
+                                <Text>
+                                    Sätt ord på dina tankar och känslor! Hur får
+                                    framtiden dig att känna? Vad ser du fram
+                                    emot? Hur vill du leva i framtiden? Hur gör
+                                    vi för att nå dit?
+                                </Text>
+                            </>
                         }
                     />
 
@@ -102,10 +109,10 @@ const Index = () => {
                         heading="För vem?"
                         content={
                             <Text>
-                                Projektet är till för dig mellan 15 till 25 år
-                                som vill bidra med dina framtidsvisioner och
-                                inspirera fler till att engagera sig för en
-                                hållbar framtid.
+                                Skrivprojektet är till för dig mellan 15 till 25
+                                är som vill bidra med dina framtidsvisioner och
+                                inspirera fler att engagera sig för en hållbar
+                                framtid.
                             </Text>
                         }
                     />
@@ -117,11 +124,18 @@ const Index = () => {
                         </Text>
 
                         <Text mt="8" fontSize="20px">
-                            Tio bidrag som skickats in senast den 14 februari
-                            kommer att väljas ut till en textsamling fylld av
-                            inspiration och framtidshopp. Texterna publiceras
-                            hos Klimatprata och samarbetspartners och kan läsas
-                            gratis.
+                            Skicka in ditt bidrag senast den 14 februari för en
+                            chans att bli publicerad i en gemensam textsamling-
+                            fylld av inspiration och framtidshopp. De utvalda
+                            texterna kommer att publiceras på Klimatprata.se och
+                            samarbetspartner{' '}
+                            <Link
+                                href="https://wedonthavetime.org?futurevisions.earth"
+                                isExternal
+                            >
+                                We Don't Have Time
+                            </Link>
+                            . Alla texter kan läsas gratis.
                         </Text>
 
                         <Center>
