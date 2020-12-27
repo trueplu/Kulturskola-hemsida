@@ -22,9 +22,8 @@ const Events = () => (
                 Kommande event
             </Heading>
             {events.map((e, i) => (
-                <Link href={e.link} isExternal>
+                <Link href={e.link} isExternal key={e.link + i}>
                     <Box
-                        key={e.link + i}
                         borderRadius="lg"
                         p="4"
                         style={{
