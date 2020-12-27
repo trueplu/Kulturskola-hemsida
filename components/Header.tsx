@@ -17,23 +17,23 @@ const NavLink: React.FC<NavLinkProps> = ({ href, children }) => (
 )
 
 const Header = () => (
-    <Container as="header" maxW="xl" p="0">
-        <Flex justify="space-between" align="center" py="4">
-            <NextLink href="/" passHref>
-                <Link
-                    fontFamily={theme.fonts.heading}
-                    fontSize="xl"
-                    px="4"
-                    py="3"
-                >
-                    FutureVisions.earth
-                </Link>
-            </NextLink>
+    <Container
+        as="header"
+        maxW="xl"
+        p="0"
+        display="flex"
+        justifyContent="space-between"
+        alignItems="center"
+    >
+        <NextLink href="/" passHref>
+            <Link fontFamily={theme.fonts.heading} fontSize="xl" px="4" py="3">
+                FutureVisions.earth
+            </Link>
+        </NextLink>
 
-            <Flex as="nav" fontWeight="bold">
-                <NavLink href="/about">Om oss</NavLink>
-                <NavLink href={'mailto:' + email}>Kontakt</NavLink>
-            </Flex>
+        <Flex as="nav" fontWeight="bold">
+            <NavLink href="/about">Om oss</NavLink>
+            <NavLink href={'mailto:' + email}>Kontakt</NavLink>
         </Flex>
     </Container>
 )
