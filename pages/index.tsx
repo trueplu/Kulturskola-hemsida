@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react'
 
 import Card from '../components/Card'
+import Events from '../components/Events'
 import IntroSection from '../components/IntroSection'
 import PrimaryCTA from '../components/PrimaryCTA'
 import Layout from '../layouts/Layout'
@@ -145,6 +146,10 @@ const Index = () => {
                 </Box>
 
                 <Divider maxW="xs" my="16" mx="auto" />
+
+                <Box maxW="xl" mx="auto">
+                    <Events />
+                </Box>
 
                 <Box maxW="xl" mx="auto">
                     <Heading as="h2" size="lg">
