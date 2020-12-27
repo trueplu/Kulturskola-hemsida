@@ -43,8 +43,8 @@ const Index = () => {
                             src: '/images/undraw_new_ideas_jdea.svg',
                             alt:
                                 'Woman holding out her hand with a large lightbulb to represent new ideas',
+                            priority: true,
                         }}
-                        imagePriority={true}
                         heading="Är du en ung framtidsvisionär?"
                         content={
                             <Text>
@@ -61,6 +61,7 @@ const Index = () => {
                             src: '/images/undraw_dream_world_cin1.svg',
                             alt:
                                 'Woman planting seeds that grow into a dream world',
+                            priority: true,
                         }}
                         heading="Varför skriva framtidsvisioner?"
                         textAlign="left"

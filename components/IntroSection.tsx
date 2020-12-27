@@ -11,7 +11,7 @@ const sides = {
 
 interface IntroSectionProps extends GridProps {
     imageSide?: keyof typeof sides
-    image: Pick<ImageProps, 'alt' | 'src'>
+    image: Pick<ImageProps, 'alt' | 'src' | 'priority'>
     heading: string
     content: React.ReactNode
     textAlign?: BoxProps['textAlign']
@@ -23,7 +23,6 @@ const IntroSection: FC<IntroSectionProps> = ({
     heading,
     content,
     textAlign = 'left',
-    imagePriority = false,
     ...props
 }) => (
     <Grid
@@ -45,8 +44,8 @@ const IntroSection: FC<IntroSectionProps> = ({
                 width={300}
                 height={300}
                 {...image}
-                priority={imagePriority}
-                loading={imagePriority ? 'eager' : 'lazy'}
+                priority={image.priority}
+                loading={image.priority ? 'eager' : 'lazy'}
             />
         </Box>
         <Card mx={[0, 6, 0]}>
