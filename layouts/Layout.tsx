@@ -43,6 +43,7 @@ export default function Layout({ children, meta = {} }: LayoutProps) {
                     backgroundRepeat: 'no-repeat',
                     backgroundAttachment: 'fixed',
                     width: '100%',
+                    minHeight: '100vh',
                 }}
             >
                 <Header />
