@@ -62,6 +62,7 @@ const Index = () => {
                                 'Woman planting seeds that grow into a dream world',
                         }}
                         heading="Varför skriva framtidsvisioner?"
+                        textAlign="left"
                         content={
                             <UnorderedList>
                                 <ListItem>
@@ -111,7 +112,7 @@ const Index = () => {
                         content={
                             <Text>
                                 Skrivprojektet är till för dig mellan 15 till 25
-                                är som vill bidra med dina framtidsvisioner och
+                                år som vill bidra med dina framtidsvisioner och
                                 inspirera fler att engagera sig för en hållbar
                                 framtid.
                             </Text>
