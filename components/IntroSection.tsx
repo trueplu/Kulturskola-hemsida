@@ -21,7 +21,7 @@ const IntroSection: FC<IntroSectionProps> = ({
     image,
     heading,
     content,
-    textAlign = 'center',
+    textAlign = 'left',
     ...props
 }) => (
     <Grid
@@ -41,11 +41,18 @@ const IntroSection: FC<IntroSectionProps> = ({
         >
             <Image width={300} height={300} {...image} />
         </Box>
-        <Card textAlign={textAlign} mx={[0, 6, 0]}>
-            <Heading as="h2" size="lg" mb="6">
+        <Card mx={[0, 6, 0]}>
+            <Heading
+                as="h2"
+                fontSize={[20, null, 24]}
+                mb="2"
+                textAlign="center"
+            >
                 {heading}
             </Heading>
-            {content}
+            <Box fontSize={[16, null, 20]} textAlign={textAlign}>
+                {content}
+            </Box>
         </Card>
     </Grid>
 )
