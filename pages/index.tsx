@@ -66,17 +66,17 @@ const Index = () => {
                         content={
                             <UnorderedList>
                                 <ListItem>
-                                    Det skapar en konkret bild vilket kan
-                                    inbringa hopp och handlingskraft
+                                    Det skapar en konkret bild vilket ger hopp
+                                    och handlingskraft
                                 </ListItem>
                                 <ListItem>
                                     Dela sina visioner med andra och få nya
                                     outforskade idéer
                                 </ListItem>
                                 <ListItem>
-                                    Handlingar som sker nu påverkar framtiden.
-                                    Därför måste vi visualisera den framtiden
-                                    vill ha och agera där efter
+                                    Våra handlingar idag påverkar framtiden.
+                                    Därför utforskar vi framtidsvisioner för att
+                                    förstå hur vi kan agera
                                 </ListItem>
                             </UnorderedList>
                         }
