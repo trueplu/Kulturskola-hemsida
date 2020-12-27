@@ -1,4 +1,4 @@
-import { Flex, Link, Container, Stack } from '@chakra-ui/react'
+import { Flex, Link, Container } from '@chakra-ui/react'
 import NextLink from 'next/link'
 
 import { theme } from '../shared/theme'
@@ -10,27 +10,30 @@ interface NavLinkProps {
 }
 const NavLink: React.FC<NavLinkProps> = ({ href, children }) => (
     <NextLink href={href} passHref>
-        <Link p="4">{children}</Link>
+        <Link py="4" px="4">
+            {children}
+        </Link>
     </NextLink>
 )
 
 const Header = () => (
-    <Container as="header" maxW="xl">
+    <Container as="header" maxW="xl" p="0">
         <Flex justify="space-between" align="center" py="4">
             <NextLink href="/" passHref>
                 <Link
                     fontFamily={theme.fonts.heading}
                     fontSize="xl"
-                    px="2"
+                    px="4"
                     py="3"
                 >
                     FutureVisions.earth
                 </Link>
             </NextLink>
 
-            <Stack direction="row" as="nav" fontWeight="bold">
-                <NavLink href={'mailto:' + email}>Kontakta oss</NavLink>
-            </Stack>
+            <Flex as="nav" fontWeight="bold">
+                <NavLink href="/about">Om oss</NavLink>
+                <NavLink href={'mailto:' + email}>Kontakt</NavLink>
+            </Flex>
         </Flex>
     </Container>
 )
