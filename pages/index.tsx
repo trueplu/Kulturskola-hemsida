@@ -127,13 +127,27 @@ const Index = () => {
 
                         <Text mt="8" fontSize="20px">
                             Skicka in ditt bidrag senast den 14 februari för en
-                            chans att bli publicerad i en gemensam textsamling-
+                            chans att bli publicerad i en gemensam textsamling -
                             fylld av inspiration och framtidshopp. De utvalda
-                            texterna kommer att publiceras på Klimatprata.se och
-                            samarbetspartner{' '}
+                            texterna kommer att publiceras hos våra
+                            samarbetspartners{' '}
+                            <Link
+                                href="https://klimatprata.se"
+                                isExternal
+                                _hover={{
+                                    textDecoration: 'underline !important',
+                                }}
+                            >
+                                Klimatprata
+                            </Link>{' '}
+                            och{' '}
                             <Link
                                 href="https://wedonthavetime.org?futurevisions.earth"
-                                isExternal
+                                rel="noopener"
+                                target="_blank"
+                                _hover={{
+                                    textDecoration: 'underline !important',
+                                }}
                             >
                                 We Don't Have Time
                             </Link>
