@@ -15,6 +15,7 @@ interface IntroSectionProps extends GridProps {
     heading: string
     content: React.ReactNode
     textAlign?: BoxProps['textAlign']
+    imagePriority?: ImageProps['priority']
 }
 const IntroSection: FC<IntroSectionProps> = ({
     imageSide = 'right',
@@ -22,6 +23,7 @@ const IntroSection: FC<IntroSectionProps> = ({
     heading,
     content,
     textAlign = 'left',
+    imagePriority = false,
     ...props
 }) => (
     <Grid
@@ -39,7 +41,13 @@ const IntroSection: FC<IntroSectionProps> = ({
             justifyContent="center"
             alignSelf="center"
         >
-            <Image width={300} height={300} {...image} />
+            <Image
+                width={300}
+                height={300}
+                {...image}
+                priority={imagePriority}
+                loading={imagePriority ? 'eager' : 'lazy'}
+            />
         </Box>
         <Card mx={[0, 6, 0]}>
             <Heading

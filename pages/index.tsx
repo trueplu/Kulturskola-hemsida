@@ -44,6 +44,7 @@ const Index = () => {
                             alt:
                                 'Woman holding out her hand with a large lightbulb to represent new ideas',
                         }}
+                        imagePriority={true}
                         heading="Är du en ung framtidsvisionär?"
                         content={
                             <Text>
