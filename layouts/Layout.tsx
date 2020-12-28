@@ -14,6 +14,9 @@ interface MetaProps {
     image?: {
         url: string
         alt: string
+        width: string
+        height: string
+        type: string
     }
 }
 
@@ -22,8 +25,11 @@ const defaultMeta = {
     description:
         'Är du en ung framtidsvisionär? Tillsammans utforskar vi vår kreativitet och skriver om den framtid vi vill kämpa för. Välkommen oavsett om du är kunnig och van att skriva - eller om du är nyfiken och vill lära dig mer!',
     image: {
-        url: '/images/FVE-logo.png',
+        url: 'https://futurevisions.earth/images/FVE-logo.png',
         alt: 'FutureVisions.earth logo',
+        height: '500',
+        width: '500',
+        type: 'image/png',
     },
 }
 
@@ -46,6 +52,8 @@ export default function Layout({ children, meta = {} }: LayoutProps) {
                 <meta property="og:description" content={description} />
                 <meta property="og:image" content={image.url} />
                 <meta property="og:image:alt" content={image.alt} />
+                <meta property="og:image:width" content={image.width} />
+                <meta property="og:image:height" content={image.height} />
                 <meta property="og:url" content="https://futurevisions.earth" />
                 <meta property="og:type" content="website" />
             </Head>
