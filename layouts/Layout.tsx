@@ -11,15 +11,24 @@ export interface LayoutProps {
 interface MetaProps {
     title?: string
     description?: string
+    image?: {
+        url: string
+        alt: string
+    }
 }
 
 const defaultMeta = {
     title: '🌍 FutureVisions.earth',
-    description: '',
+    description:
+        'Är du en ung framtidsvisionär? Tillsammans utforskar vi vår kreativitet och skriver om den framtid vi vill kämpa för. Välkommen oavsett om du är kunnig och van att skriva - eller om du är nyfiken och vill lära dig mer!',
+    image: {
+        url: '/images/FVE-logo.png',
+        alt: 'FutureVisions.earth logo',
+    },
 }
 
 export default function Layout({ children, meta = {} }: LayoutProps) {
-    const { title, description } = {
+    const { title, description, image } = {
         ...defaultMeta,
         ...meta,
     }
@@ -31,8 +40,14 @@ export default function Layout({ children, meta = {} }: LayoutProps) {
                     content="width=device-width, initial-scale=1"
                 />
                 <meta charSet="utf-8" />
-                <meta name="description" content={description}></meta>
                 <title>{title}</title>
+                <meta property="og:title" content={title} />
+                <meta name="description" content={description} />
+                <meta property="og:description" content={description} />
+                <meta property="og:image" content={image.url} />
+                <meta property="og:image:alt" content={image.alt} />
+                <meta property="og:url" content="https://futurevisions.earth" />
+                <meta property="og:type" content="website" />
             </Head>
             <Box
                 sx={{
