@@ -31,14 +31,19 @@ const About = () => (
             hjälp av kreativitet och den berättande kraften.
         </Text>
 
-        <Text mt="8">
-            FutureVisions.earth finns för att komplettera den växande cli-fi
-            genren och de dystopiska influenserna med visionära och positiva
-            berättelser. Vi tror att unga behöver kunna föreställa sig en bra
-            framtid där vi har lyckats skapa en hållbar värld för att känna hopp
-            och kraft att agera nu under det avgörande 2020-talet. Därför bjuder
-            vi in alla som vill vara med och utforska framtidsvisioner. Häng med
-            så skriver vi framtidshistoria!
+        <Text mt="4">
+            Den växande cli-fi genren inom litteratur och film har hittills gett
+            mycket plats åt dystopier, vilket riskerar att leda till passivitet.
+            FutureVisions.earth finns för att lyfta visionära och positiva
+            berättelser som inspirerar till förändring.
+        </Text>
+
+        <Text mt="4">
+            Vi tror att vi unga behöver föreställa oss en bra framtid där vi har
+            lyckats skapa en hållbar värld för att känna hopp och kraft att
+            agera nu under det avgörande 2020-talet. Därför bjuder vi in alla
+            som vill vara med och utforska framtidsvisioner. Häng med så skriver
+            vi framtidshistoria!
         </Text>
         <Center>
             <PrimaryCTA />
