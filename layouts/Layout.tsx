@@ -27,8 +27,8 @@ const defaultMeta = {
     image: {
         url: 'https://futurevisions.earth/images/FVE-og-image.png',
         alt: 'FutureVisions.earth logo',
-        height: '2400',
-        width: '1256',
+        width: '2400',
+        height: '1256',
         type: 'image/png',
     },
 }
