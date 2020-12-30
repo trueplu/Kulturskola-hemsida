@@ -10,7 +10,7 @@ interface NavLinkProps {
 }
 const NavLink: React.FC<NavLinkProps> = ({ href, children }) => (
     <NextLink href={href} passHref>
-        <Link py="4" px="4">
+        <Link py="4" px="4" variant="white">
             {children}
         </Link>
     </NextLink>
@@ -19,14 +19,20 @@ const NavLink: React.FC<NavLinkProps> = ({ href, children }) => (
 const Header = () => (
     <Container
         as="header"
-        maxW="xl"
+        maxW="1080px"
         p="0"
         display="flex"
         justifyContent="space-between"
         alignItems="center"
     >
         <NextLink href="/" passHref>
-            <Link fontFamily={theme.fonts.heading} fontSize="xl" px="4" py="3">
+            <Link
+                fontFamily={theme.fonts.heading}
+                fontSize="xl"
+                px="4"
+                py="3"
+                variant="white"
+            >
                 FutureVisions.earth
             </Link>
         </NextLink>

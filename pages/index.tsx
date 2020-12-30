@@ -178,7 +178,7 @@ const Index = () => {
                         </ListItem>
                         <ListItem>
                             Du bifogar och skickar in din novell eller dikt i{' '}
-                            <Link href={formLink} isExternal>
+                            <Link href={formLink} isExternal variant="yellow">
                                 formuläret
                             </Link>
                         </ListItem>
@@ -192,7 +192,9 @@ const Index = () => {
                         </ListItem>
                         <ListItem>
                             Har du några frågor, hör av dig till{' '}
-                            <Link href={'mailto:' + email}>{email}</Link>
+                            <Link href={'mailto:' + email} variant="yellow">
+                                {email}
+                            </Link>
                         </ListItem>
                     </UnorderedList>
                 </Box>

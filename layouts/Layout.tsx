@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import { Box, Container } from '@chakra-ui/react'
+import { Box, Container, ContainerProps } from '@chakra-ui/react'
 
 import Header from '../components/Header'
 
-export interface LayoutProps {
+export interface LayoutProps extends ContainerProps {
     children: React.ReactNode
     meta?: MetaProps
 }
@@ -33,7 +33,7 @@ const defaultMeta = {
     },
 }
 
-export default function Layout({ children, meta = {} }: LayoutProps) {
+export default function Layout({ children, meta = {}, ...props }: LayoutProps) {
     const { title, description, image } = {
         ...defaultMeta,
         ...meta,
@@ -70,7 +70,7 @@ export default function Layout({ children, meta = {} }: LayoutProps) {
                 }}
             >
                 <Header />
-                <Container mt="8" maxW="xl">
+                <Container mt="8" maxW="1280px" {...props}>
                     {children}
                 </Container>
             </Box>
