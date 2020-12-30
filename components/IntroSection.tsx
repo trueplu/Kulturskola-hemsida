@@ -48,7 +48,13 @@ const IntroSection: FC<IntroSectionProps> = ({
                 loading={image.priority ? 'eager' : 'lazy'}
             />
         </Box>
-        <Card mx={[0, 6, 0]}>
+        <Card
+            mx={[0, 6, 0]}
+            display="grid"
+            gridTemplateColumns="1fr"
+            gridTemplateRows="min-content min-content"
+            alignSelf="center"
+        >
             <Heading
                 as="h2"
                 fontSize={[20, null, 24]}
