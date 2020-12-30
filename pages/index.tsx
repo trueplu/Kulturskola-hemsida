@@ -69,16 +69,17 @@ const Index = () => {
                             <UnorderedList>
                                 <ListItem>
                                     Det skapar en konkret bild vilket ger hopp
-                                    och handlingskraft
+                                    och handlingskraft.
                                 </ListItem>
                                 <ListItem>
-                                    Dela sina visioner med andra och få nya
-                                    outforskade idéer
+                                    Dela dina visioner med andra och få nya,
+                                    outforskade idéer.
                                 </ListItem>
                                 <ListItem>
                                     Våra handlingar idag påverkar framtiden.
-                                    Därför utforskar vi framtidsvisioner för att
-                                    förstå hur vi kan agera
+                                    Genom att utforska framtidsvisioner förstår
+                                    vi hur vi kan agera och skapa en hållbar
+                                    framtid.
                                 </ListItem>
                             </UnorderedList>
                         }
@@ -97,7 +98,7 @@ const Index = () => {
                                     Sätt ord på dina tankar och känslor! Hur får
                                     framtiden dig att känna? Vad ser du fram
                                     emot? Hur vill du leva i framtiden? Hur gör
-                                    vi för att nå dit?
+                                    vi för att nå en hållbar framtid?
                                 </Text>
                             </>
                         }
@@ -114,9 +115,9 @@ const Index = () => {
                         content={
                             <Text>
                                 Skrivprojektet är till för dig mellan 15 till 25
-                                år som vill bidra med dina framtidsvisioner och
-                                inspirera fler att engagera sig för en hållbar
-                                framtid.
+                                år som vill dela dina framtidsvisioner och
+                                inspirera fler till att engagera sig för en
+                                hållbar framtid.
                             </Text>
                         }
                     />
