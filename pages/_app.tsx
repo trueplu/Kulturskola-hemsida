@@ -1,7 +1,8 @@
-import MDXProvider from '../components/MDXProvider'
 import { ChakraProvider, CSSReset } from '@chakra-ui/react'
 import { AppProps } from 'next/app'
+import 'focus-visible/dist/focus-visible'
 
+import MDXProvider from '../components/MDXProvider'
 import { theme } from '../shared/theme'
 import '../styles/globals.css'
 
