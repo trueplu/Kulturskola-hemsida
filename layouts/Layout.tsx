@@ -25,10 +25,10 @@ const defaultMeta = {
     description:
         'Är du en ung framtidsvisionär? Tillsammans utforskar vi vår kreativitet och skriver om den framtid vi vill kämpa för. Välkommen oavsett om du är kunnig och van att skriva - eller om du är nyfiken och vill lära dig mer!',
     image: {
-        url: 'https://futurevisions.earth/images/FVE-logo-square.png',
+        url: 'https://futurevisions.earth/images/FVE-og-image.png',
         alt: 'FutureVisions.earth logo',
-        height: '500',
-        width: '500',
+        height: '2400',
+        width: '1256',
         type: 'image/png',
     },
 }
