@@ -23,7 +23,7 @@ const Index = () => {
                 <Center flexDirection="column" textAlign="center" mb="20">
                     <Heading
                         as="h1"
-                        fontSize={['35px', '40px', '50px', '60px']}
+                        fontSize={['30px', '40px', '50px', '60px']}
                     >
                         FutureVisions.earth
                     </Heading>
