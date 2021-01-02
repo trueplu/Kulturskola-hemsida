@@ -9,15 +9,7 @@ const About = () => (
         <Heading>Om oss</Heading>
         <Text mt="2">
             FutureVisions.earth startades av{' '}
-            <Link
-                href="https://www.instagram.com/josefinbolander/"
-                rel="noopener"
-                target="_blank"
-                variant="yellow"
-            >
-                Josefin Bolander
-            </Link>{' '}
-            och{' '}
+            <Link variant="yellow">Josefin Bolander</Link> och{' '}
             <Link
                 href="https://samuelplumppu.se"
                 rel="noopener"
