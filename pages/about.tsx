@@ -1,12 +1,38 @@
-import { Heading, Link, Text, Center } from '@chakra-ui/react'
+import { Heading, Link, Text, Center, Flex } from '@chakra-ui/react'
 import NextLink from 'next/link'
 
 import Layout from '../layouts/Layout'
 import PrimaryCTA from '../components/PrimaryCTA'
+import Image from 'next/image'
 
 const About = () => (
     <Layout maxW="xl" fontSize={[16, null, 20]}>
         <Heading>Om oss</Heading>
+        <Flex
+            justifyContent="space-around"
+            alignItems="center"
+            p={8}
+            minWidth="100%"
+        >
+            <Image
+                src="/images/josefin2.png"
+                alt="Josefin Bolander"
+                className="round"
+                width={200}
+                height={200}
+                priority
+                objectFit="contain"
+            />
+            <Image
+                src="/images/samuel.png"
+                alt="Samuel Plumppu"
+                className="round"
+                width={200}
+                height={200}
+                priority
+                objectFit="contain"
+            />
+        </Flex>
         <Text mt="2">
             FutureVisions.earth startades av{' '}
             <Link variant="yellow">Josefin Bolander</Link> och{' '}
