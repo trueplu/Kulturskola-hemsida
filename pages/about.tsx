@@ -22,7 +22,7 @@ const About = () => (
             <Image
                 src="/images/josefin2.png"
                 alt="Josefin Bolander"
-                className="round"
+                className="round bg-white"
                 width={200}
                 height={200}
                 priority
@@ -32,7 +32,7 @@ const About = () => (
             <Image
                 src="/images/samuel.png"
                 alt="Samuel Plumppu"
-                className="round"
+                className="round bg-white"
                 width={200}
                 height={200}
                 priority
