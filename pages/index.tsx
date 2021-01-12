@@ -15,6 +15,7 @@ import IntroSection from '../components/IntroSection'
 import PrimaryCTA from '../components/PrimaryCTA'
 import Layout from '../layouts/Layout'
 import Partners from '../components/Partners'
+import DetailedInstructions from '../components/DetailedInstructions'
 
 const Index = () => {
     return (
@@ -177,35 +178,7 @@ const Index = () => {
 
                 <Divider maxW="xs" my="16" mx="auto" />
 
-                <Box maxW="xl" mx="auto" pb="12">
-                    <Text>
-                        <Text fontWeight="bold" as="span">
-                            Restriktioner:{' '}
-                        </Text>
-                        Novellen/dikten får inte vara publicerad sedan tidigare
-                        i varken tryckt eller digitalt format. Den som lämnar in
-                        försäkrar sig om att hen skrivit novellen/dikten. Max 2
-                        bidrag per person.
-                    </Text>
-                    <Text mt="4">
-                        <Text fontWeight="bold" as="span">
-                            Rättigheter:{' '}
-                        </Text>
-                        Genom att skicka in novellen eller dikten får
-                        FutureVisions.earth ditt godkännande att publicera
-                        texten i sina kanaler, hos samarbetspartners och i
-                        tryck. Ditt namn/pseudonym kommer att publiceras med
-                        texten.{' '}
-                    </Text>
-                    <Text mt="4">
-                        Författaren äger och håller rätten till sin text
-                        (Upphovsrättslagen). Genom att skicka in ditt bidrag
-                        godkänner du att FutureVisions.earth publicerar din
-                        text. FutureVisions.earth har som syfte att sprida
-                        inspiration och gemenskap bland ungdomar. Texterna som
-                        skickas in kommer att vara gratis att läsa.
-                    </Text>
-                </Box>
+                <DetailedInstructions />
             </Layout>
         </>
     )
