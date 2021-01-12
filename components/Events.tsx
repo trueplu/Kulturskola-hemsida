@@ -31,7 +31,6 @@ const Events = () => {
     const upcomingEvents = events.filter(keepUpcomingEvents)
     return upcomingEvents.length ? (
         <>
-            {/* <Card mx="auto" my="20" pt="4" px="2" pb="2"> */}
             <Card mx="auto" my="20" p="2">
                 <Heading textAlign="center" mb="2">
                     Kommande event
