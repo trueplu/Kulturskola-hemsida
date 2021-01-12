@@ -3,6 +3,7 @@ import NextLink from 'next/link'
 
 import Layout from '../layouts/Layout'
 import PrimaryCTA from '../components/PrimaryCTA'
+import Partners from '../components/Partners'
 import Image from 'next/image'
 
 const About = () => (
@@ -73,13 +74,15 @@ const About = () => (
         <Center>
             <PrimaryCTA />
         </Center>
-        <Center mb="20">
+        <Center>
             <NextLink href="/">
                 <Link variant="white" py="4">
                     Läs mer
                 </Link>
             </NextLink>
         </Center>
+
+        <Partners py="20" />
     </Layout>
 )
 

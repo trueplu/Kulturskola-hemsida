@@ -7,7 +7,6 @@ import {
     Text,
     Link,
     UnorderedList,
-    LinkBox,
 } from '@chakra-ui/react'
 
 import Card from '../components/Card'
@@ -15,7 +14,7 @@ import Events from '../components/Events'
 import IntroSection from '../components/IntroSection'
 import PrimaryCTA from '../components/PrimaryCTA'
 import Layout from '../layouts/Layout'
-import { formLink, email } from '../shared/constants'
+import Partners from '../components/Partners'
 
 const Index = () => {
     return (
@@ -170,53 +169,10 @@ const Index = () => {
                     <Events />
                 </Box>
 
-                <Box maxW="xl" mx="auto">
-                    <Heading as="h2" size="lg">
-                        Hur går det till?
-                    </Heading>
-                    <UnorderedList>
-                        <ListItem>
-                            Du skriver själv, eller med dina vänner
-                        </ListItem>
-                        <ListItem>
-                            Du bifogar och skickar in din novell eller dikt i{' '}
-                            <Link href={formLink} isExternal variant="yellow">
-                                formuläret
-                            </Link>
-                        </ListItem>
-                        <ListItem>
-                            Författaren{' '}
-                            <Link
-                                href="https://skrivguiden.se/publicering/upphovsratt/"
-                                isExternal
-                                variant="yellow"
-                            >
-                                äger och håller rätten till sin text
-                            </Link>
-                            , men genom att skicka in texten godkänner du att vi
-                            publicerar den.
-                        </ListItem>
-                        <ListItem>
-                            Max 2 st inskickade bidrag per person.
-                        </ListItem>
-                        <ListItem>
-                            Har du några frågor, hör av dig till{' '}
-                            <Link href={'mailto:' + email} variant="yellow">
-                                {email}
-                            </Link>
-                        </ListItem>
-                    </UnorderedList>
-                </Box>
+                <Divider maxW="xs" my="16" mx="auto" />
 
-                <Box maxW="xl" mt="8" mx="auto">
-                    <Heading as="h2" size="lg">
-                        Format för novell och dikt:
-                    </Heading>
-                    <UnorderedList>
-                        <ListItem>Times New Roman typsnitt 12</ListItem>
-                        <ListItem>Språk: Svenska</ListItem>
-                        <ListItem>Max 1250 ord</ListItem>
-                    </UnorderedList>
+                <Box maxW="xl" mx="auto">
+                    <Partners />
                 </Box>
 
                 <Divider maxW="xs" my="16" mx="auto" />
