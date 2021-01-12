@@ -19,7 +19,6 @@ const events: FutureVisionsEvent[] = [
         title: 'Träning i visionära klimatsamtal',
         when: 'Torsdag, 21 januari kl. 17:00-19:00',
         date: '2021-01-21T16:00:00.0Z',
-        // date: '2020-12-30T16:00:00.0Z',
         organizer: 'Klimatprata',
         link: 'https://www.facebook.com/events/787787511805460',
     },
