@@ -56,8 +56,18 @@ const Events = () => {
                             <Text position="absolute" top="4" right="4">
                                 →
                             </Text>
-                            <Text mt="2">När: {e.when}</Text>
-                            <Text>Arrangör: {Organizers[e.organizer]}</Text>
+                            <Text mt="2">
+                                När:{' '}
+                                <Text as="span" fontWeight="normal">
+                                    {e.when}
+                                </Text>{' '}
+                            </Text>
+                            <Text>
+                                Arrangör:{' '}
+                                <Text as="span" fontWeight="normal">
+                                    {Organizers[e.organizer]}
+                                </Text>{' '}
+                            </Text>
                         </Box>
                     </Link>
                 ))}
