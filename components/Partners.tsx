@@ -2,6 +2,8 @@ import { FC } from 'react'
 import { Text, Link, Heading, Grid, Box, BoxProps } from '@chakra-ui/react'
 import Image from 'next/image'
 
+import { email } from '../shared/constants'
+
 interface Partner {
     name: string
     link: string
@@ -60,6 +62,12 @@ const Partners: FC<PartnersProps> = (props) => {
                     </Link>
                 ))}
             </Grid>
+            <Text textAlign="center" mt="4">
+                Vill du samarbeta?{' '}
+                <Link href={`mailto:${email}`} variant="yellow">
+                    Hör av dig!
+                </Link>
+            </Text>
         </Box>
     ) : null
 }
