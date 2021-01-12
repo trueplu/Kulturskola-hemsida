@@ -27,7 +27,7 @@ const About = () => (
                 width={200}
                 height={200}
                 priority
-                quality={20}
+                quality={60}
                 objectFit="contain"
             />
             <Image
@@ -37,7 +37,7 @@ const About = () => (
                 width={200}
                 height={200}
                 priority
-                quality={20}
+                quality={60}
                 objectFit="contain"
             />
         </Grid>
