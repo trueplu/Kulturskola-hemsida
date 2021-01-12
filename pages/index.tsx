@@ -146,7 +146,7 @@ const Index = () => {
                             </Link>{' '}
                             och{' '}
                             <Link
-                                href="https://wedonthavetime.org?futurevisions.earth"
+                                href="https://wedonthavetime.org/our-community?futurevisions.earth"
                                 rel="noopener"
                                 target="_blank"
                                 _hover={{
