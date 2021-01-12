@@ -7,6 +7,7 @@ import {
     Text,
     Link,
     UnorderedList,
+    LinkBox,
 } from '@chakra-ui/react'
 
 import Card from '../components/Card'
@@ -184,8 +185,15 @@ const Index = () => {
                             </Link>
                         </ListItem>
                         <ListItem>
-                            Författaren håller och äger rätten till sin text,
-                            men genom att skicka in texten godkänner du att vi
+                            Författaren{' '}
+                            <Link
+                                href="https://skrivguiden.se/publicering/upphovsratt/"
+                                isExternal
+                                variant="yellow"
+                            >
+                                äger och håller rätten till sin text
+                            </Link>
+                            , men genom att skicka in texten godkänner du att vi
                             publicerar den.
                         </ListItem>
                         <ListItem>
