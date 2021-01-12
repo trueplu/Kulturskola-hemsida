@@ -1,4 +1,4 @@
-import { Heading, Link, Text, Center, Flex } from '@chakra-ui/react'
+import { Heading, Link, Text, Center, Grid } from '@chakra-ui/react'
 import NextLink from 'next/link'
 
 import Layout from '../layouts/Layout'
@@ -8,11 +8,16 @@ import Image from 'next/image'
 const About = () => (
     <Layout maxW="xl" fontSize={[16, null, 20]}>
         <Heading>Om oss</Heading>
-        <Flex
-            justifyContent="space-around"
-            alignItems="center"
+        <Grid
+            gridTemplateColumns={[
+                'repeat(2, 120px)',
+                'repeat(2, 160px)',
+                'repeat(2, 200px)',
+            ]}
             p={8}
             minWidth="100%"
+            justifyContent="center"
+            gap="4"
         >
             <Image
                 src="/images/josefin2.png"
@@ -21,6 +26,7 @@ const About = () => (
                 width={200}
                 height={200}
                 priority
+                quality={20}
                 objectFit="contain"
             />
             <Image
@@ -30,9 +36,10 @@ const About = () => (
                 width={200}
                 height={200}
                 priority
+                quality={20}
                 objectFit="contain"
             />
-        </Flex>
+        </Grid>
         <Text mt="2">
             FutureVisions.earth startades av{' '}
             <Link variant="yellow">Josefin Bolander</Link> och{' '}
@@ -66,7 +73,7 @@ const About = () => (
         <Center>
             <PrimaryCTA />
         </Center>
-        <Center>
+        <Center mb="20">
             <NextLink href="/">
                 <Link variant="white" py="4">
                     Läs mer
