@@ -13,6 +13,7 @@ import Card from '../components/Card'
 import Events from '../components/Events'
 import IntroSection from '../components/IntroSection'
 import PrimaryCTA from '../components/PrimaryCTA'
+import Timeline from '../components/Timeline'
 import Layout from '../layouts/Layout'
 import Partners from '../components/Partners'
 import DetailedInstructions from '../components/DetailedInstructions'
@@ -168,6 +169,12 @@ const Index = () => {
 
                 <Box maxW="xl" mx="auto">
                     <Events />
+                </Box>
+
+                <Divider maxW="xs" my="16" mx="auto" />
+
+                <Box maxW="xl" mx="auto">
+                    <Timeline />
                 </Box>
 
                 <Divider maxW="xs" my="16" mx="auto" />
