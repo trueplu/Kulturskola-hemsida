@@ -17,7 +17,7 @@ export interface DetailedInstructionsProps extends BoxProps {}
 const DetailedInstructions: FC<DetailedInstructionsProps> = (props) => (
     <Box {...props}>
         <Box maxW="xl" mx="auto">
-            <Heading as="h2" size="lg">
+            <Heading as="h2" size="xl" textAlign="center" mb="2">
                 Hur går det till?
             </Heading>
             <UnorderedList>
@@ -51,8 +51,8 @@ const DetailedInstructions: FC<DetailedInstructionsProps> = (props) => (
         </Box>
 
         <Box maxW="xl" mt="8" mx="auto">
-            <Heading as="h2" size="lg">
-                Format för novell och dikt:
+            <Heading as="h2" size="xl" textAlign="center" mb="2">
+                Format för novell och dikt
             </Heading>
             <UnorderedList>
                 <ListItem>Times New Roman typsnitt 12</ListItem>
