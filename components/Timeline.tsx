@@ -43,13 +43,13 @@ const Timeline = () => (
                 <Link href={formLink} isExternal variant="yellow">
                     formuläret
                 </Link>
-                . Max 2 st inskickade bidrag per person
+                . Max 2 st inskickade bidrag per person.
             </Text>
         </TimelineItem>
         <TimelineItem title="Publicering av textsamling - mars/april 2021">
             <Text>
                 Ett urval av texterna sammanställs i en gemensam textsamling som
-                publiceras via Klimatprata och FutureVisions.earth
+                publiceras via Klimatprata och FutureVisions.earth.
             </Text>
         </TimelineItem>
         <TimelineItem title="Läs, inspireras och nätverka - mars/april 2021">
