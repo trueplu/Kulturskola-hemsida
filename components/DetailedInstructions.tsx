@@ -63,7 +63,7 @@ const DetailedInstructions: FC<DetailedInstructionsProps> = (props) => (
 
         <Divider maxW="xs" my="16" mx="auto" />
 
-        <Box maxW="xl" mx="auto" pb="12">
+        <Box maxW="xl" mx="auto">
             <Text>
                 <Text fontWeight="bold" as="span">
                     Restriktioner:{' '}

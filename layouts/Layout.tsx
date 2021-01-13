@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Box, Container, ContainerProps } from '@chakra-ui/react'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export interface LayoutProps extends ContainerProps {
     children: React.ReactNode
@@ -73,6 +74,8 @@ export default function Layout({ children, meta = {}, ...props }: LayoutProps) {
                 <Container mt="8" maxW="1280px" {...props}>
                     {children}
                 </Container>
+
+                <Footer mt="16" />
             </Box>
         </>
     )

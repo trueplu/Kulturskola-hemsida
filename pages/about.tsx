@@ -89,7 +89,7 @@ const About = () => (
             </NextLink>
         </Center>
 
-        <Partners py="20" />
+        <Partners pt="20" />
     </Layout>
 )
 
