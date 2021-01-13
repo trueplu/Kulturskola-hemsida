@@ -43,7 +43,14 @@ const About = () => (
         </Grid>
         <Text mt="2">
             FutureVisions.earth startades av{' '}
-            <Link variant="yellow">Josefin Bolander</Link> och{' '}
+            <Link
+                variant="yellow"
+                href="https://www.linkedin.com/in/josefin-bolander-98253b1a0/"
+                isExternal
+            >
+                Josefin Bolander
+            </Link>{' '}
+            och{' '}
             <Link
                 href="https://samuelplumppu.se"
                 rel="noopener"
