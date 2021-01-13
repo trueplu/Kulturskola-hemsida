@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import { Text, Link, Heading, Grid, Box, BoxProps } from '@chakra-ui/react'
 import Image from 'next/image'
+import NextLink from 'next/link'
 
 import { email } from '../shared/constants'
 
@@ -33,8 +34,11 @@ const Partners: FC<PartnersProps> = (props) => {
                 Våra partners
             </Heading>
             <Text>
-                FutureVisions.earth är ett ideellt initiativ som stöttas av och
-                samarbetar med följande partners:
+                <NextLink href="/about" passHref>
+                    <Link variant="yellow">FutureVisions.earth</Link>
+                </NextLink>{' '}
+                är ett ideellt initiativ som stöttas av och samarbetar med
+                följande partners:
             </Text>
             <Grid
                 mx="auto"
