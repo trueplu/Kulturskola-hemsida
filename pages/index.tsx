@@ -1,7 +1,6 @@
 import {
     Box,
     Center,
-    Divider,
     Heading,
     ListItem,
     Text,
@@ -17,6 +16,7 @@ import Timeline from '../components/Timeline'
 import Layout from '../layouts/Layout'
 import Partners from '../components/Partners'
 import DetailedInstructions from '../components/DetailedInstructions'
+import Divider from '../components/Divider'
 
 const Index = () => {
     return (
@@ -165,25 +165,25 @@ const Index = () => {
                     </Card>
                 </Box>
 
-                <Divider maxW="xs" my="16" mx="auto" />
+                <Divider />
 
                 <Box maxW="xl" mx="auto">
                     <Events />
                 </Box>
 
-                <Divider maxW="xs" my="16" mx="auto" />
+                <Divider />
 
                 <Box maxW="xl" mx="auto">
                     <Timeline />
                 </Box>
 
-                <Divider maxW="xs" my="16" mx="auto" />
+                <Divider />
 
                 <Box maxW="xl" mx="auto">
                     <Partners />
                 </Box>
 
-                <Divider maxW="xs" my="16" mx="auto" />
+                <Divider />
 
                 <DetailedInstructions />
             </Layout>

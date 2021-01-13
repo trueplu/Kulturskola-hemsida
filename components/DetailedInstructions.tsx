@@ -2,7 +2,6 @@ import { FC } from 'react'
 import {
     Box,
     BoxProps,
-    Divider,
     Heading,
     ListItem,
     Text,
@@ -11,6 +10,7 @@ import {
 } from '@chakra-ui/react'
 
 import { formLink, email } from '../shared/constants'
+import Divider from './Divider'
 
 export interface DetailedInstructionsProps extends BoxProps {}
 
@@ -61,7 +61,7 @@ const DetailedInstructions: FC<DetailedInstructionsProps> = (props) => (
             </UnorderedList>
         </Box>
 
-        <Divider maxW="xs" my="16" mx="auto" />
+        <Divider />
 
         <Box maxW="xl" mx="auto">
             <Text>
