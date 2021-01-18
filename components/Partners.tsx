@@ -26,7 +26,7 @@ const partners: Partner[] = [
     {
         name: `Scenario 2030`,
         link: 'https://scenario2030.se/',
-        logo: '/images/scenario2030vit.png',
+        logo: '/images/Logga-Scenario-2030.png',
     },
 ]
 
@@ -48,14 +48,14 @@ const Partners: FC<PartnersProps> = (props) => {
             <Grid
                 mx="auto"
                 gridTemplateColumns="repeat(auto-fill, minmax(min(250px, 100%), 1fr))"
-                gap={[6, 6, 4]}
+                gap="6"
                 justifyContent="center"
                 pt="4"
             >
                 {partners.map((p, index) => (
                     <Link
                         key={p.name}
-                        height="100px"
+                        height="80px"
                         width="auto"
                         position="relative"
                         isExternal
