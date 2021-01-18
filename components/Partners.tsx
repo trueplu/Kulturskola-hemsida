@@ -23,6 +23,11 @@ const partners: Partner[] = [
             'https://www.wedonthavetime.org/our-community?futurevisions.earth',
         logo: '/images/wedonthavetime-2-line-rgb.png',
     },
+    {
+        name: `Scenario 2030`,
+        link: 'https://scenario2030.se/',
+        logo: '/images/scenario2030vit.png',
+    },
 ]
 
 export interface PartnersProps extends BoxProps {}
@@ -43,11 +48,11 @@ const Partners: FC<PartnersProps> = (props) => {
             <Grid
                 mx="auto"
                 gridTemplateColumns="repeat(auto-fill, minmax(min(250px, 100%), 1fr))"
-                gap="4"
+                gap={[6, 6, 4]}
                 justifyContent="center"
                 pt="4"
             >
-                {partners.map((p) => (
+                {partners.map((p, index) => (
                     <Link
                         key={p.name}
                         height="100px"
@@ -55,6 +60,13 @@ const Partners: FC<PartnersProps> = (props) => {
                         position="relative"
                         isExternal
                         href={p.link}
+                        // if we have an odd number of partners, let the last logo take full width
+                        {...(index % 2 === 0 && index === partners.length - 1
+                            ? {
+                                  gridColumnStart: [null, 1],
+                                  gridColumnEnd: [null, -1],
+                              }
+                            : {})}
                     >
                         <Image
                             src={p.logo}
