@@ -47,7 +47,7 @@ const Timeline = () => (
                 >
                     Workshop: Hur ser en hållbar framtid ut och hur når vi dit?
                 </Link>{' '}
-                17:30-19:30
+                17:30-20:00
             </Text>
         </TimelineItem>
         <TimelineItem title="Inlämning stänger - 14 februari">

@@ -21,7 +21,7 @@ const events: FutureVisionsEvent[] = [
     },
     {
         title: 'Workshop: Hur ser en hållbar framtid ut och hur når vi dit?',
-        when: 'Tisdag, 2 februari kl. 17:30-19:30',
+        when: 'Tisdag, 2 februari kl. 17:30-20:00',
         date: '2021-02-02T16:30:00.0Z',
         organizer: 'Klimatprata, Scenario 2030',
         link: 'https://www.facebook.com/events/862486387653627',
