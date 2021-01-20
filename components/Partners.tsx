@@ -28,6 +28,11 @@ const partners: Partner[] = [
         link: 'https://scenario2030.se/',
         logo: '/images/Logga-Scenario-2030.png',
     },
+    {
+        name: `PUSH Sverige`,
+        link: 'https://pushsverige.se/',
+        logo: '/images/PUSH_Sverige_enkel_vit.png',
+    },
 ]
 
 export interface PartnersProps extends BoxProps {}
