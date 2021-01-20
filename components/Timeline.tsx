@@ -38,6 +38,18 @@ const Timeline = () => (
                 17:00-19:00
             </Text>
         </TimelineItem>
+        <TimelineItem title="Gratis event med Klimatprata och Scenario 2030 - 2 februari">
+            <Text>
+                <Link
+                    href="https://www.facebook.com/events/862486387653627"
+                    isExternal
+                    variant="yellow"
+                >
+                    Workshop: Hur ser en hållbar framtid ut och hur når vi dit?
+                </Link>{' '}
+                17:30-19:30
+            </Text>
+        </TimelineItem>
         <TimelineItem title="Inlämning stänger - 14 februari">
             <Text>
                 Du bifogar och skickar in din novell/dikt i{' '}
