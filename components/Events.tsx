@@ -46,7 +46,7 @@ const Events = () => {
                     är med och arrangerar. Välkommen att anmäla dig via länkarna
                     nedan!
                 </Text>
-                {events.map((e, i) => (
+                {upcomingEvents.map((e, i) => (
                     <Link href={e.link} isExternal key={e.link + i}>
                         <Box
                             borderRadius="lg"
