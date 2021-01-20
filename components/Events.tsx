@@ -40,11 +40,13 @@ const Events = () => {
                     Kommande event
                 </Heading>
                 <Text p="4" pt="0">
+                    För att inspirera och underlätta i skrivprocessen så
+                    arrangerar{' '}
                     <NextLink href="/about" passHref>
                         <Link>FutureVisions.earth</Link>
                     </NextLink>{' '}
-                    är med och arrangerar. Välkommen att anmäla dig via länkarna
-                    nedan!
+                    event tillsammans med våra partners. Välkommen att anmäla
+                    dig via länkarna nedan!
                 </Text>
                 {upcomingEvents.map((e, i) => (
                     <Link href={e.link} isExternal key={e.link + i}>
