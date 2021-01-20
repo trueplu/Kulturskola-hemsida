@@ -167,19 +167,19 @@ const Index = () => {
 
                 <Divider />
 
-                <Box maxW="xl" mx="auto">
+                <Box maxW="2xl" mx="auto">
                     <Events />
                 </Box>
 
                 <Divider />
 
-                <Box maxW="xl" mx="auto">
+                <Box maxW="2xl" mx="auto">
                     <Timeline />
                 </Box>
 
                 <Divider />
 
-                <Box maxW="xl" mx="auto">
+                <Box maxW="2xl" mx="auto">
                     <Partners />
                 </Box>
 
