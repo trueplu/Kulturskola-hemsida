@@ -6,9 +6,10 @@ import { email, formLink } from '../shared/constants'
 interface TimelineItemProps {
     title: string
     children: React.ReactNode
+    mb?: string
 }
 const TimelineItem: FC<TimelineItemProps> = ({ title, children }) => (
-    <Box>
+    <Box mb="8">
         <Heading as="h3" fontSize="xl" mt="4" mb="1">
             {`🌍 ${title}`}
         </Heading>
