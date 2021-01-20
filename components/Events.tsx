@@ -1,16 +1,13 @@
 import { Text, Link, Heading, Box } from '@chakra-ui/react'
+import NextLink from 'next/link'
 
 import Card from './Card'
-
-const Organizers = {
-    Klimatprata: 'Vardagens civilkurage, genom projektet Klimatprata',
-}
 
 interface FutureVisionsEvent {
     title: string
     when: string
     date: string
-    organizer: keyof typeof Organizers
+    organizer: string
     link: string
 }
 
@@ -19,8 +16,15 @@ const events: FutureVisionsEvent[] = [
         title: 'Träning i visionära klimatsamtal',
         when: 'Torsdag, 21 januari kl. 17:00-19:00',
         date: '2021-01-21T16:00:00.0Z',
-        organizer: 'Klimatprata',
+        organizer: 'Vardagens civilkurage, genom projektet Klimatprata',
         link: 'https://www.facebook.com/events/787787511805460',
+    },
+    {
+        title: 'Workshop: Hur ser en hållbar framtid ut och hur når vi dit?',
+        when: 'Tisdag, 2 februari kl. 17:30-19:30',
+        date: '2021-02-02T16:30:00.0Z',
+        organizer: 'Klimatprata, Scenario 2030',
+        link: 'https://www.facebook.com/events/862486387653627',
     },
 ]
 
@@ -32,9 +36,16 @@ const Events = () => {
     return upcomingEvents.length ? (
         <>
             <Card mx="auto" my="20" p="2">
-                <Heading textAlign="center" mb="2">
+                <Heading textAlign="center" my="2">
                     Kommande event
                 </Heading>
+                <Text p="4" pt="0">
+                    <NextLink href="/about" passHref>
+                        <Link>FutureVisions.earth</Link>
+                    </NextLink>{' '}
+                    är med och arrangerar. Välkommen att anmäla dig via länkarna
+                    nedan!
+                </Text>
                 {events.map((e, i) => (
                     <Link href={e.link} isExternal key={e.link + i}>
                         <Box
@@ -65,7 +76,7 @@ const Events = () => {
                             <Text>
                                 Arrangör:{' '}
                                 <Text as="span" fontWeight="normal">
-                                    {Organizers[e.organizer]}
+                                    {e.organizer}
                                 </Text>{' '}
                             </Text>
                         </Box>
