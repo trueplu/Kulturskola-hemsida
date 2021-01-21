@@ -1,4 +1,4 @@
-import { Heading, Link, Text, Center, Grid } from '@chakra-ui/react'
+import { Heading, Link, Text, Center } from '@chakra-ui/react'
 import NextLink from 'next/link'
 
 import Layout from '../layouts/Layout'
@@ -9,59 +9,21 @@ import Image from 'next/image'
 const About = () => (
     <Layout maxW="xl" fontSize={[16, null, 20]}>
         <Heading>Om oss</Heading>
-        <Grid
-            gridTemplateColumns={[
-                'repeat(2, 120px)',
-                'repeat(2, 160px)',
-                'repeat(2, 200px)',
-            ]}
-            p={8}
-            minWidth="100%"
-            justifyContent="center"
-            gap="4"
-        >
+        <Center>
             <Image
-                src="/images/josefin2.png"
-                alt="Josefin Bolander"
-                className="round bg-white"
-                width={200}
-                height={200}
+                src="/images/undraw_new_ideas_jdea.svg"
+                alt="Woman holding out her hand with a large lightbulb to represent new ideas"
                 priority
-                quality={60}
-                objectFit="contain"
+                loading="eager"
+                width={250}
+                height={250}
             />
-            <Image
-                src="/images/samuel.png"
-                alt="Samuel Plumppu"
-                className="round bg-white"
-                width={200}
-                height={200}
-                priority
-                quality={60}
-                objectFit="contain"
-            />
-        </Grid>
+        </Center>
         <Text mt="2">
-            FutureVisions.earth startades av{' '}
-            <Link
-                variant="yellow"
-                href="https://www.linkedin.com/in/josefin-bolander-98253b1a0/"
-                isExternal
-            >
-                Josefin Bolander
-            </Link>{' '}
-            och{' '}
-            <Link
-                href="https://samuelplumppu.se"
-                rel="noopener"
-                target="_blank"
-                variant="yellow"
-            >
-                Samuel Plumppu
-            </Link>{' '}
-            hösten 2020 för att lyfta berättelser och samtal om en hållbar
-            framtid. Målet är att inspirera fler unga framtidsvisionärer med
-            hjälp av kreativitet och den berättande kraften.
+            FutureVisions.earth startades hösten 2020 för att lyfta berättelser
+            och samtal om en hållbar framtid. Målet är att inspirera fler unga
+            framtidsvisionärer med hjälp av kreativitet och den berättande
+            kraften.
         </Text>
 
         <Text mt="4">
