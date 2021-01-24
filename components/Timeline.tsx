@@ -1,7 +1,7 @@
 import { Box, Heading, Link, Text } from '@chakra-ui/react'
 import { FC } from 'react'
 
-import { email, formLink } from '../shared/constants'
+import { email, getStartedLink } from '../shared/constants'
 
 interface TimelineItemProps {
     title: string
@@ -53,7 +53,7 @@ const Timeline = () => (
         <TimelineItem title="Inlämning stänger - 14 februari">
             <Text>
                 Du bifogar och skickar in din novell/dikt i{' '}
-                <Link href={formLink} isExternal variant="yellow">
+                <Link href={getStartedLink} isExternal variant="yellow">
                     formuläret
                 </Link>
                 . Max 2 st inskickade bidrag per person.

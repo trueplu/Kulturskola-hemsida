@@ -9,7 +9,7 @@ import {
     UnorderedList,
 } from '@chakra-ui/react'
 
-import { formLink, email } from '../shared/constants'
+import { getStartedLink, email } from '../shared/constants'
 import Divider from './Divider'
 
 export interface DetailedInstructionsProps extends BoxProps {}
@@ -24,7 +24,7 @@ const DetailedInstructions: FC<DetailedInstructionsProps> = (props) => (
                 <ListItem>Du skriver själv, eller med dina vänner</ListItem>
                 <ListItem>
                     Du bifogar och skickar in din novell eller dikt i{' '}
-                    <Link href={formLink} isExternal variant="yellow">
+                    <Link href={getStartedLink} isExternal variant="yellow">
                         formuläret
                     </Link>
                 </ListItem>

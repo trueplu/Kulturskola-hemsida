@@ -2,16 +2,14 @@ import { FC } from 'react'
 import NextLink from 'next/link'
 import { Button, ButtonProps } from '@chakra-ui/react'
 
-import { formLink } from '../shared/constants'
+import { getStartedLink } from '../shared/constants'
 
 const PrimaryCTA: FC<ButtonProps> = ({ ...props }) => (
-    <NextLink href={formLink} passHref>
+    <NextLink href={getStartedLink} passHref>
         <Button
             size="lg"
             mt="8"
             as="a"
-            target="_blank"
-            rel="noopener"
             color="black"
             bg="#ffe156"
             transition="none"
@@ -26,7 +24,7 @@ const PrimaryCTA: FC<ButtonProps> = ({ ...props }) => (
             }}
             {...props}
         >
-            Skicka in ditt bidrag!
+            Kom igång!
         </Button>
     </NextLink>
 )

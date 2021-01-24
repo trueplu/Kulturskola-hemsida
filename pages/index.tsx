@@ -12,6 +12,10 @@ import Card from '../components/Card'
 import IntroSection from '../components/IntroSection'
 import PrimaryCTA from '../components/PrimaryCTA'
 import Layout from '../layouts/Layout'
+import Divider from '../components/Divider'
+
+import { theme } from '../shared/theme'
+import { getStartedId } from '../shared/constants'
 
 /*
 
@@ -46,9 +50,23 @@ const Index = () => {
                 <Center flexDirection="column" textAlign="center" mb="20">
                     <Heading
                         as="h1"
-                        fontSize={['28px', '30px', '50px', '60px']}
+                        fontSize={['16px', null, '18px']}
+                        textTransform="uppercase"
+                        letterSpacing=".1rem"
+                        fontWeight="light"
+                        fontFamily={theme.fonts.body}
                     >
-                        Lär dig spela brassinstrument
+                        Lär dig spela <br />
+                        <Box
+                            as="span"
+                            fontSize={['34px', '50px', '60px']}
+                            textTransform="none"
+                            letterSpacing="none"
+                            fontWeight="bold"
+                            fontFamily={theme.fonts.heading}
+                        >
+                            Brassinstrument
+                        </Box>
                     </Heading>
 
                     <Text mt="4" mb="4" fontSize={['lg', null, null, 'xl']}>
@@ -106,6 +124,38 @@ const Index = () => {
                             </UnorderedList>
                         }
                     />
+
+                    <Divider id={getStartedId} />
+
+                    {/* <Heading
+                        as="h2"
+                        textAlign="center"
+                        fontSize={['40px', '50px', '60px']}
+                    >
+                        Instrument
+                    </Heading> */}
+
+                    <Heading
+                        as="h2"
+                        fontSize={['16px', null, '18px']}
+                        textTransform="uppercase"
+                        letterSpacing=".1rem"
+                        fontWeight="light"
+                        textAlign="center"
+                        fontFamily={theme.fonts.body}
+                    >
+                        Välj ditt <br />
+                        <Box
+                            as="span"
+                            fontSize={['34px', '50px', '60px']}
+                            textTransform="none"
+                            letterSpacing="none"
+                            fontWeight="bold"
+                            fontFamily={theme.fonts.heading}
+                        >
+                            Instrument
+                        </Box>
+                    </Heading>
 
                     <IntroSection
                         imageSide="left"
