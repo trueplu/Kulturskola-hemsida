@@ -27,13 +27,6 @@ const About = () => (
         <Center>
             <PrimaryCTA />
         </Center>
-        <Center>
-            <NextLink href="/" passHref>
-                <Link variant="white" py="4">
-                    Kom igång!
-                </Link>
-            </NextLink>
-        </Center>
     </Layout>
 )
 
