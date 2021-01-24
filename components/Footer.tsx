@@ -13,8 +13,8 @@ const Footer: FC<FlexProps> = (props) => (
     >
         &copy; {new Date().getFullYear()} Fredrik Plumppu
         <NextLink href="/about" passHref>
-            <Link variant="yellow" mt="4">
-                Om oss
+            <Link variant="yellow" mt="4" px="3">
+                Om
             </Link>
         </NextLink>
     </Flex>
