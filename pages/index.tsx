@@ -9,14 +9,35 @@ import {
 } from '@chakra-ui/react'
 
 import Card from '../components/Card'
-import Events from '../components/Events'
 import IntroSection from '../components/IntroSection'
 import PrimaryCTA from '../components/PrimaryCTA'
-import Timeline from '../components/Timeline'
 import Layout from '../layouts/Layout'
-import Partners from '../components/Partners'
-import DetailedInstructions from '../components/DetailedInstructions'
-import Divider from '../components/Divider'
+
+/*
+
+index
+- startsida ✅
+    - förklarande text på om hemsidan ✅
+- dokument
+    - lista alla dokument ✅
+    - håll dokument uppdaterade över tid ✅
+- lista blogginlägg
+    - kategorier
+    - spara exempel som går att kopiera
+
+
+ks.plumppumusik.se/trumpet/lektion
+ks.plumppumusik.se/horn/lektion
+
+ks.plumppumusik.se
+    /trumpet
+        /moment-1
+    /horn
+    /orkester
+    /baryton
+
+
+*/
 
 const Index = () => {
     return (
@@ -27,7 +48,7 @@ const Index = () => {
                         as="h1"
                         fontSize={['30px', '40px', '50px', '60px']}
                     >
-                        FutureVisions.earth
+                        Kulturskola
                     </Heading>
 
                     <Text mt="4" mb="4" fontSize={['lg', null, null, 'xl']}>
@@ -164,28 +185,6 @@ const Index = () => {
                         </Center>
                     </Card>
                 </Box>
-
-                <Divider />
-
-                <Box maxW="2xl" mx="auto">
-                    <Events />
-                </Box>
-
-                <Divider />
-
-                <Box maxW="2xl" mx="auto">
-                    <Timeline />
-                </Box>
-
-                <Divider />
-
-                <Box maxW="2xl" mx="auto">
-                    <Partners />
-                </Box>
-
-                <Divider />
-
-                <DetailedInstructions />
             </Layout>
         </>
     )
