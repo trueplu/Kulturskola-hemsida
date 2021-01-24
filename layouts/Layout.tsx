@@ -22,12 +22,14 @@ interface MetaProps {
 }
 
 const defaultMeta = {
-    title: '🌍 FutureVisions.earth',
+    title: '🎺 Lär dig spela brassinstrument med Fredrik Plumppu',
     description:
-        'Är du en ung framtidsvisionär? Tillsammans utforskar vi vår kreativitet och skriver om den framtid vi vill kämpa för. Välkommen oavsett om du är kunnig och van att skriva - eller om du är nyfiken och vill lära dig mer!',
+        'Nyfiken på brassinstrument? Här hittar du övningar och moment för att ta dig till nästa nivå!',
     image: {
+        //  TODO: Ersätt med OG-bild som kommer synas när sidan delas i sociala medier, chattappar osv
         url: 'https://futurevisions.earth/images/FVE-og-image.png',
         alt: 'FutureVisions.earth logo',
+        // TODO: ersätt mer korrekt info om bilden
         width: '2400',
         height: '1256',
         type: 'image/png',

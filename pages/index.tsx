@@ -127,14 +127,6 @@ const Index = () => {
 
                     <Divider id={getStartedId} />
 
-                    {/* <Heading
-                        as="h2"
-                        textAlign="center"
-                        fontSize={['40px', '50px', '60px']}
-                    >
-                        Instrument
-                    </Heading> */}
-
                     <Heading
                         as="h2"
                         fontSize={['16px', null, '18px']}
