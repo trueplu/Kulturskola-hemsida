@@ -9,11 +9,10 @@ import Image from 'next/image'
 const About = () => (
     <Layout maxW="xl" fontSize={[16, null, 20]}>
         <Heading textAlign="center">Om mig</Heading>
-        <Text>TODO: ersätt med bild på Fredrik</Text>
         <Center>
             <Image
-                src="/images/undraw_new_ideas_jdea.svg"
-                alt="Woman holding out her hand with a large lightbulb to represent new ideas"
+                src="/images/Baryton.jpg"
+                alt="Fredrik sitting in a circle of baritones holding a trumpet"
                 priority
                 loading="eager"
                 width={250}
