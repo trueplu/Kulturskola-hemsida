@@ -70,8 +70,7 @@ const Index = () => {
                     </Heading>
 
                     <Text mt="4" mb="4" fontSize={['lg', null, null, 'xl']}>
-                        Vilken framtid vill du leva i och hur gör vi för att nå
-                        dit?
+                        Här kommer en liten text om kulturskolan.
                     </Text>
 
                     <PrimaryCTA />
