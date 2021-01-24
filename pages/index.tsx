@@ -15,7 +15,7 @@ import Layout from '../layouts/Layout'
 import Divider from '../components/Divider'
 
 import { theme } from '../shared/theme'
-import { getStartedId } from '../shared/constants'
+import { getStartedId, email } from '../shared/constants'
 
 /*
 
@@ -118,8 +118,11 @@ const Index = () => {
                                     din egen takt.
                                 </ListItem>
                                 <ListItem>
-                                    Gå igenom på nästa lektion. Välkommen att
-                                    höra av dig om du behöver hjälp!
+                                    Gå igenom på nästa lektion.{' '}
+                                    <Link href={'mailto:' + email}>
+                                        Välkommen att höra av dig om du behöver
+                                        hjälp!
+                                    </Link>
                                 </ListItem>
                             </UnorderedList>
                         }
@@ -212,6 +215,24 @@ const Index = () => {
                                 'Man brainstorming, thinking and organizing new ideas',
                         }}
                         heading="Valthorn"
+                        content={
+                            <Text>
+                                Skrivprojektet är till för dig mellan 15 till 25
+                                år som vill dela dina framtidsvisioner och
+                                inspirera fler till att engagera sig för en
+                                hållbar framtid.
+                            </Text>
+                        }
+                    />
+
+                    <IntroSection
+                        imageSide="left"
+                        image={{
+                            src: '/images/undraw_thought_process_67my.svg',
+                            alt:
+                                'Man brainstorming, thinking and organizing new ideas',
+                        }}
+                        heading="Bastuba"
                         content={
                             <Text>
                                 Skrivprojektet är till för dig mellan 15 till 25
