@@ -46,9 +46,9 @@ const Index = () => {
                 <Center flexDirection="column" textAlign="center" mb="20">
                     <Heading
                         as="h1"
-                        fontSize={['30px', '40px', '50px', '60px']}
+                        fontSize={['24px', '30px', '50px', '60px']}
                     >
-                        Kulturskola
+                        Lär dig spela brassinstrument
                     </Heading>
 
                     <Text mt="4" mb="4" fontSize={['lg', null, null, 'xl']}>
@@ -68,9 +68,10 @@ const Index = () => {
                                 'Woman holding out her hand with a large lightbulb to represent new ideas',
                             priority: true,
                         }}
-                        heading="Är du en ung framtidsvisionär?"
+                        heading="Nyfiken på att spela brassinstrument?"
                         content={
                             <Text>
+                                (Kort text om varför spela brassinstrument)
                                 Utforska din kreativitet och skriv om den värld
                                 du vill kämpa för. Välkommen att delta oavsett
                                 om du är van skribent eller bara nyfiken!
@@ -86,23 +87,21 @@ const Index = () => {
                                 'Woman planting seeds that grow into a dream world',
                             priority: true,
                         }}
-                        heading="Varför skriva framtidsvisioner?"
+                        heading="Digitala lektioner - hur går det till?"
                         textAlign="left"
                         content={
                             <UnorderedList>
                                 <ListItem>
-                                    Det skapar en konkret bild vilket ger hopp
-                                    och handlingskraft.
+                                    Hitta nya moment och övningar här på
+                                    hemsidan.
                                 </ListItem>
                                 <ListItem>
-                                    Dela dina visioner med andra och få nya,
-                                    outforskade idéer.
+                                    Se videoklipp, läs instruktionerna och öva i
+                                    din egen takt.
                                 </ListItem>
                                 <ListItem>
-                                    Våra handlingar idag påverkar framtiden.
-                                    Genom att utforska framtidsvisioner förstår
-                                    vi hur vi kan agera och skapa en hållbar
-                                    framtid.
+                                    Gå igenom på nästa lektion. Välkommen att
+                                    höra av dig om du behöver hjälp!
                                 </ListItem>
                             </UnorderedList>
                         }

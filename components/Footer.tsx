@@ -11,7 +11,7 @@ const Footer: FC<FlexProps> = (props) => (
         as="footer"
         {...props}
     >
-        &copy; {new Date().getFullYear()} FutureVisions.earth
+        &copy; {new Date().getFullYear()} Fredrik Plumppu
         <NextLink href="/about" passHref>
             <Link variant="yellow" mt="4">
                 Om oss

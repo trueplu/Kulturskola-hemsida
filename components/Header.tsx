@@ -33,7 +33,7 @@ const Header = () => (
                 py={[2, 3]}
                 variant="white"
             >
-                FutureVisions.earth
+                Musiklärare Fredrik Plumppu
             </Link>
         </NextLink>
 
