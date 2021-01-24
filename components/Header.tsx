@@ -10,7 +10,13 @@ interface NavLinkProps {
 }
 const NavLink: React.FC<NavLinkProps> = ({ href, children }) => (
     <NextLink href={href} passHref>
-        <Link py={[2, 4]} px={[2, 4]} variant="white">
+        <Link
+            py={[2, 3, 4]}
+            pt={[1, 3, 4]}
+            px={[3, 3, 4]}
+            variant="white"
+            fontSize={['lg', 'md']}
+        >
             {children}
         </Link>
     </NextLink>
@@ -21,24 +27,30 @@ const Header = () => (
         as="header"
         maxW="1080px"
         p="0"
-        display="flex"
-        justifyContent="space-between"
+        display={['grid', 'flex']}
+        justifyContent={['center', 'space-between']}
         alignItems="center"
+        borderBottom={['1px dotted white', '0']}
     >
         <NextLink href="/" passHref>
             <Link
                 fontFamily={theme.fonts.heading}
                 fontSize="xl"
-                px={[2, 4]}
-                py={[2, 3]}
+                px={[3, 4]}
+                py={[3, 4]}
+                pb={[1, 4]}
                 variant="white"
             >
                 Musiklärare Fredrik Plumppu
             </Link>
         </NextLink>
 
-        <Flex as="nav" fontWeight="bold" justifyContent="flex-start">
-            <NavLink href="/about">Om oss</NavLink>
+        <Flex
+            as="nav"
+            fontWeight="bold"
+            justifyContent={['center', 'flex-start']}
+        >
+            <NavLink href="/about">Om</NavLink>
             <NavLink href={'mailto:' + email}>Kontakt</NavLink>
         </Flex>
     </Container>

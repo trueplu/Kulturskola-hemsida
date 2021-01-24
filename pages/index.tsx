@@ -46,7 +46,7 @@ const Index = () => {
                 <Center flexDirection="column" textAlign="center" mb="20">
                     <Heading
                         as="h1"
-                        fontSize={['24px', '30px', '50px', '60px']}
+                        fontSize={['28px', '30px', '50px', '60px']}
                     >
                         Lär dig spela brassinstrument
                     </Heading>
