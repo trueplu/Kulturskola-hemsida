@@ -155,7 +155,7 @@ const Index = () => {
                             src: '/images/undraw_inspiration_lecl.svg',
                             alt: 'Man finding inspiration',
                         }}
-                        heading="Noveller och dikter för framtiden"
+                        heading="Trumpet"
                         content={
                             <>
                                 <Text>
@@ -175,7 +175,43 @@ const Index = () => {
                             alt:
                                 'Man brainstorming, thinking and organizing new ideas',
                         }}
-                        heading="För vem?"
+                        heading="Baryton"
+                        content={
+                            <Text>
+                                Skrivprojektet är till för dig mellan 15 till 25
+                                år som vill dela dina framtidsvisioner och
+                                inspirera fler till att engagera sig för en
+                                hållbar framtid.
+                            </Text>
+                        }
+                    />
+
+                    <IntroSection
+                        imageSide="left"
+                        image={{
+                            src: '/images/undraw_thought_process_67my.svg',
+                            alt:
+                                'Man brainstorming, thinking and organizing new ideas',
+                        }}
+                        heading="Trombon"
+                        content={
+                            <Text>
+                                Skrivprojektet är till för dig mellan 15 till 25
+                                år som vill dela dina framtidsvisioner och
+                                inspirera fler till att engagera sig för en
+                                hållbar framtid.
+                            </Text>
+                        }
+                    />
+
+                    <IntroSection
+                        imageSide="right"
+                        image={{
+                            src: '/images/undraw_thought_process_67my.svg',
+                            alt:
+                                'Man brainstorming, thinking and organizing new ideas',
+                        }}
+                        heading="Valthorn"
                         content={
                             <Text>
                                 Skrivprojektet är till för dig mellan 15 till 25
