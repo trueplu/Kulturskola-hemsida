@@ -6,9 +6,9 @@ import PrimaryCTA from '../components/PrimaryCTA'
 import Partners from '../components/Partners'
 import Image from 'next/image'
 
-const About = () => (
+const Orkester = () => (
     <Layout maxW="xl" fontSize={[16, null, 20]}>
-        <Heading textAlign="center">Om mig</Heading>
+        <Heading textAlign="center">Orkester</Heading>
         <Center>
             <Image
                 src="/images/Baryton.jpg"
@@ -19,14 +19,11 @@ const About = () => (
                 height={250}
             />
         </Center>
-        <Text mt="2">
-            Musiklärare Kulturskolan Borås. Berätta om dina mål med hemsidan och
-            digital undervisning.
-        </Text>
+        <Text mt="2">orkester orkester orkester</Text>
         <Center>
             <PrimaryCTA />
         </Center>
     </Layout>
 )
 
-export default About
+export default Orkester

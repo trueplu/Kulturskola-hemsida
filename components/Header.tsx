@@ -2,13 +2,18 @@ import { Flex, Link, Container } from '@chakra-ui/react'
 import NextLink from 'next/link'
 
 import { theme } from '../shared/theme'
-import { email } from '../shared/constants'
+import { email, documentsLink } from '../shared/constants'
 
 interface NavLinkProps {
     href: string
     children: React.ReactNode
+    isExternal?: boolean
 }
-const NavLink: React.FC<NavLinkProps> = ({ href, children }) => (
+const NavLink: React.FC<NavLinkProps> = ({
+    href,
+    children,
+    isExternal = false,
+}) => (
     <NextLink href={href} passHref>
         <Link
             py={[2, 3, 4]}
@@ -16,6 +21,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href, children }) => (
             px={[3, 3, 4]}
             variant="white"
             fontSize={['lg', 'md']}
+            isExternal={isExternal}
         >
             {children}
         </Link>
@@ -50,7 +56,12 @@ const Header = () => (
             fontWeight="bold"
             justifyContent={['center', 'flex-start']}
         >
-            <NavLink href="/about">Om</NavLink>
+            <NavLink href="/instrument">Instrument</NavLink>
+            <NavLink href="/orkester">Orkester</NavLink>
+            <NavLink href={documentsLink} isExternal>
+                Dokument
+            </NavLink>
+            <NavLink href="/om">Om</NavLink>
             <NavLink href={'mailto:' + email}>Kontakt</NavLink>
         </Flex>
     </Container>
