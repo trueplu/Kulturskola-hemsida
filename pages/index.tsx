@@ -70,7 +70,8 @@ const Index = () => {
                     </Heading>
 
                     <Text mt="4" mb="4" fontSize={['lg', null, null, 'xl']}>
-                        Här kommer en liten text om kulturskolan.
+                        Välkommen du som redan är elev eller du som vill börja
+                        spela ett brassinstrument.
                     </Text>
 
                     <PrimaryCTA />
