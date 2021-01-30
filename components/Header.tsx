@@ -2,7 +2,7 @@ import { Flex, Link, Container } from '@chakra-ui/react'
 import NextLink from 'next/link'
 
 import { theme } from '../shared/theme'
-import { email, documentsLink } from '../shared/constants'
+import { email, documentsLink, videosLink } from '../shared/constants'
 
 interface NavLinkProps {
     href: string
@@ -60,6 +60,9 @@ const Header = () => (
             <NavLink href="/orkester">Orkester</NavLink>
             <NavLink href={documentsLink} isExternal>
                 Dokument
+            </NavLink>
+            <NavLink href={videosLink} isExternal>
+                Videos
             </NavLink>
             <NavLink href="/om">Om</NavLink>
             <NavLink href={'mailto:' + email}>Kontakt</NavLink>
