@@ -47,7 +47,7 @@ const Header = () => (
                 pb={[1, 4]}
                 variant="white"
             >
-                Musiklärare Fredrik Plumppu
+                Musiklärare Fredrik Plumpp
             </Link>
         </NextLink>
 
