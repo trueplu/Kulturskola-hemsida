@@ -259,7 +259,6 @@ const Index = () => {
                             >
                                 Anmälningssida
                             </Link>
-                            . Alla texter kan läsas gratis.
                         </Text>
 
                         <Center>
