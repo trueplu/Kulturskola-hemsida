@@ -246,7 +246,7 @@ const Index = () => {
                                     textDecoration: 'underline !important',
                                 }}
                             >
-                                Klimatprata
+                                Borås Kulturskolas hemsida
                             </Link>{' '}
                             och{' '}
                             <Link
@@ -257,7 +257,7 @@ const Index = () => {
                                     textDecoration: 'underline !important',
                                 }}
                             >
-                                We Don't Have Time
+                                Anmälningssida
                             </Link>
                             . Alla texter kan läsas gratis.
                         </Text>
