@@ -71,7 +71,8 @@ const Index = () => {
 
                     <Text mt="4" mb="4" fontSize={['lg', null, null, 'xl']}>
                         Välkommen du som redan är elev eller du som vill börja
-                        spela ett brassinstrument.
+                        spela ett brassinstrument. Du är också välkommen att
+                        komma och knacka på våra fönster när det är mörkt ute.
                     </Text>
 
                     <PrimaryCTA />
