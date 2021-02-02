@@ -240,7 +240,7 @@ const Index = () => {
                             Läs mer om hur det är att vara elev i kulturskolan
                             och anmäl dig här{' '}
                             <Link
-                                href="https://klimatprata.se"
+                                href="https://www.boras.se/utbildningochforskola/boraskulturskola.4.461763c21582ce0434ba484b.html"
                                 isExternal
                                 _hover={{
                                     textDecoration: 'underline !important',
@@ -250,7 +250,7 @@ const Index = () => {
                             </Link>{' '}
                             och{' '}
                             <Link
-                                href="https://wedonthavetime.org/our-community?futurevisions.earth"
+                                href="https://open24.ist-asp.com/boras/musik/Musik/Start"
                                 rel="noopener"
                                 target="_blank"
                                 _hover={{
