@@ -163,10 +163,8 @@ const Index = () => {
                         content={
                             <>
                                 <Text>
-                                    Sätt ord på dina tankar och känslor! Hur får
-                                    framtiden dig att känna? Vad ser du fram
-                                    emot? Hur vill du leva i framtiden? Hur gör
-                                    vi för att nå en hållbar framtid?
+                                    Som alla vet är trumpet det finaste
+                                    instrumentet av dem alla. PUNKT!
                                 </Text>
                             </>
                         }
@@ -182,10 +180,10 @@ const Index = () => {
                         heading="Baryton"
                         content={
                             <Text>
-                                Skrivprojektet är till för dig mellan 15 till 25
-                                år som vill dela dina framtidsvisioner och
-                                inspirera fler till att engagera sig för en
-                                hållbar framtid.
+                                Baryton är en riktig pärla bland
+                                brassinstrumenten. Lillebror till bastuban och
+                                har ofta solostämman i traditionell
+                                blåsorkester.
                             </Text>
                         }
                     />
@@ -199,12 +197,7 @@ const Index = () => {
                         }}
                         heading="Trombon"
                         content={
-                            <Text>
-                                Skrivprojektet är till för dig mellan 15 till 25
-                                år som vill dela dina framtidsvisioner och
-                                inspirera fler till att engagera sig för en
-                                hållbar framtid.
-                            </Text>
+                            <Text>Trombonen är ett instrument med drag i.</Text>
                         }
                     />
 
@@ -216,14 +209,7 @@ const Index = () => {
                                 'Man brainstorming, thinking and organizing new ideas',
                         }}
                         heading="Valthorn"
-                        content={
-                            <Text>
-                                Skrivprojektet är till för dig mellan 15 till 25
-                                år som vill dela dina framtidsvisioner och
-                                inspirera fler till att engagera sig för en
-                                hållbar framtid.
-                            </Text>
-                        }
+                        content={<Text>Kix!</Text>}
                     />
 
                     <IntroSection
@@ -236,26 +222,23 @@ const Index = () => {
                         heading="Bastuba"
                         content={
                             <Text>
-                                Skrivprojektet är till för dig mellan 15 till 25
-                                år som vill dela dina framtidsvisioner och
-                                inspirera fler till att engagera sig för en
-                                hållbar framtid.
+                                Fundamentet för hela vårt musicerande. Det var
+                                detta J.S. Bach drömde om men inte riktigt kunde
+                                få ur sig. I stället skrev han mängder av musik
+                                för orgel när han kunnat skriva den direkt för
+                                brassensemble. Sicken klåpare. ;.D
                             </Text>
                         }
                     />
 
                     <Card mx="auto" textAlign="center">
                         <Text fontWeight="bold" fontSize="2xl">
-                            Så, vilken framtid vill du leva i och hur gör vi för
-                            att nå dit?
+                            Hur gör jag för att anmäla mig?
                         </Text>
 
                         <Text mt="8" fontSize="20px">
-                            Skicka in ditt bidrag senast den 14 februari för en
-                            chans att bli publicerad i en gemensam textsamling -
-                            fylld av inspiration och framtidshopp. De utvalda
-                            texterna kommer att publiceras hos våra
-                            samarbetspartners{' '}
+                            Läs mer om hur det är att vara elev i kulturskolan
+                            och anmäl dig här{' '}
                             <Link
                                 href="https://klimatprata.se"
                                 isExternal
