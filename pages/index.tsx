@@ -89,10 +89,11 @@ const Index = () => {
                         heading="Nyfiken på att spela brassinstrument?"
                         content={
                             <Text>
-                                (Kort text om varför spela brassinstrument)
-                                Utforska din kreativitet och skriv om den värld
-                                du vill kämpa för. Välkommen att delta oavsett
-                                om du är van skribent eller bara nyfiken!
+                                Trumpet, valthorn, baryton, tuba och trombon är
+                                de valigaste brassinstrumenten du kan spela på
+                                Borås Kulturskola. Undervisningen sker både i
+                                Fristad musikskola, Borås Kulturskola i
+                                Simonsland och ute på grundskolor i Borås stad.
                             </Text>
                         }
                     />
