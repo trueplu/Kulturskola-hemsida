@@ -25,7 +25,8 @@ const Instrument = () => (
             visar hur övningen går till hittar du i Videos.
         </Text>
         <Center>
-            <PrimaryCTA />
+            <PrimaryCTA href="/om">Länktext</PrimaryCTA>
+            <PrimaryCTA href="/ovningar/trumpet-1">Trumpet 1</PrimaryCTA>
         </Center>
     </Layout>
 )
