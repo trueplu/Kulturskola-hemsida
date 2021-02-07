@@ -4,8 +4,8 @@ import { Button, ButtonProps } from '@chakra-ui/react'
 
 import { getStartedLink } from '../shared/constants'
 
-const PrimaryCTA: FC<ButtonProps> = ({ ...props }) => (
-    <NextLink href={getStartedLink} passHref>
+const PrimaryCTA: FC<ButtonProps> = ({ href = getStartedLink, ...props }) => (
+    <NextLink href={href} passHref>
         <Button
             size="lg"
             mt="8"
