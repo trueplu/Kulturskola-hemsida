@@ -19,7 +19,11 @@ const Instrument = () => (
                 height={250}
             />
         </Center>
-        <Text mt="2">Instrument instrument instrument</Text>
+        <Text mt="2">
+            Här finns moment att öva på för trumpet, valthorn och baryton.
+            Notexempel hittar du i Dokument uppe i menyn och filmer där jag
+            visar hur övningen går till hittar du i Videos.
+        </Text>
         <Center>
             <PrimaryCTA />
         </Center>
