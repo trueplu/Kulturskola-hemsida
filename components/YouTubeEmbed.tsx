@@ -1,3 +1,4 @@
+import { FC } from 'react'
 import { AspectRatioProps, AspectRatio } from '@chakra-ui/react'
 
 interface YouTubeEmbedProps extends AspectRatioProps {

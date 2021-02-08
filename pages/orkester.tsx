@@ -3,7 +3,6 @@ import NextLink from 'next/link'
 
 import Layout from '../layouts/Layout'
 import PrimaryCTA from '../components/PrimaryCTA'
-import Partners from '../components/Partners'
 import Image from 'next/image'
 
 const Orkester = () => (
