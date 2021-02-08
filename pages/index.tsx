@@ -15,33 +15,7 @@ import Layout from '../layouts/Layout'
 import Divider from '../components/Divider'
 
 import { theme } from '../shared/theme'
-import { getStartedId, email } from '../shared/constants'
-
-/*
-
-index
-- startsida ✅
-    - förklarande text på om hemsidan ✅
-- dokument
-    - lista alla dokument ✅
-    - håll dokument uppdaterade över tid ✅
-- lista blogginlägg
-    - kategorier
-    - spara exempel som går att kopiera
-
-
-ks.plumppumusik.se/trumpet/lektion
-ks.plumppumusik.se/horn/lektion
-
-ks.plumppumusik.se
-    /trumpet
-        /moment-1
-    /horn
-    /orkester
-    /baryton
-
-
-*/
+import { email } from '../shared/constants'
 
 const Index = () => {
     return (
@@ -129,7 +103,7 @@ const Index = () => {
                         }
                     />
 
-                    <Divider id={getStartedId} />
+                    <Divider />
 
                     <Heading
                         as="h2"
