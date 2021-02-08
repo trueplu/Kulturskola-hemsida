@@ -1,6 +1,6 @@
-import { Center, CenterProps } from '@chakra-ui/react'
+import { AspectRatioProps, AspectRatio } from '@chakra-ui/react'
 
-interface YouTubeEmbedProps extends CenterProps {
+interface YouTubeEmbedProps extends AspectRatioProps {
     /**
      * The YouTube Video ID
      * For example the last part "PYu_5R50v3s" from https://youtube.com/watch?v=PYu_5R50v3s
@@ -9,7 +9,12 @@ interface YouTubeEmbedProps extends CenterProps {
 }
 
 const YouTubeEmbed: FC<YouTubeEmbedProps> = ({ videoID, ...props }) => (
-    <Center mt="8" {...props}>
+    <AspectRatio
+        maxW="560px"
+        ratio={16 / 9}
+        style={{ margin: '32px auto' }}
+        {...props}
+    >
         <iframe
             width="560"
             height="315"
@@ -17,7 +22,7 @@ const YouTubeEmbed: FC<YouTubeEmbedProps> = ({ videoID, ...props }) => (
             frameBorder="0"
             allowFullScreen
         />
-    </Center>
+    </AspectRatio>
 )
 
 export default YouTubeEmbed
