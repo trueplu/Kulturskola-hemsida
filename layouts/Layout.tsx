@@ -26,13 +26,11 @@ const defaultMeta = {
     description:
         'Nyfiken på brassinstrument? Här hittar du övningar och moment för att ta dig till nästa nivå!',
     image: {
-        //  TODO: Ersätt med OG-bild som kommer synas när sidan delas i sociala medier, chattappar osv
-        url: 'https://futurevisions.earth/images/FVE-og-image.png',
-        alt: 'FutureVisions.earth logo',
-        // TODO: ersätt mer korrekt info om bilden
-        width: '2400',
-        height: '1256',
-        type: 'image/png',
+        url: 'https://ks.plumppumusik.se/images/Baryton.jpg',
+        alt: 'Fredrik Plumppu med baryton och andra brassinstrument.',
+        width: '750',
+        height: '827',
+        type: 'image/jpeg',
     },
 }
 
