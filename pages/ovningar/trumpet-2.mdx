@@ -1,18 +1,18 @@
-import Layout from '../layouts/Layout'
-import Content from '../layouts/Content'
+import Layout from '../../layouts/Layout'
+import Content from '../../layouts/Content'
 
 <!--
     NOTE: To publish a post, make a copy of this file and save it in the same folder.
     The filename will be determine the post url:
-        - `example.mdx` will for example be published under `futurevisions.earth/news/example`
-        - `your-post.mdx` will be published under `futurevisions.earth/news/your-post`
+        - `example.mdx` will for example be published under `/news/example`
+        - `your-post.mdx` will be published under `/news/your-post`
         - and so on
 -->
 
 export const meta = {
-    title: 'trumpet 2',
-    description:
-        'Description for this post. Short intro that will show in social media and search engines when sharing the link.',
+    title: 'Trumpet 2',
+    // description:
+    //     'Description for this post. Short intro that will show in social media and search engines when sharing the link.',
     // See `defaultMeta` defined in Layout.tsx for details on how to add a custom social sharing image for this post.
 }
 
@@ -23,10 +23,10 @@ export const meta = {
 
 export default ({ children }) => (
     <Layout meta={meta}>
-        <Content maxW="5xl">{children}</Content>
+        <Content maxW="3xl">{children}</Content>
     </Layout>
 )
 
-# trumpet 2
+# Trumpet 2
 
 Här ska jag skriva övningar
