@@ -30,17 +30,17 @@ const exerciseLinks: Record<ExerciseType, Exercise[]> = {
     ],
     Valthorn: [
         {
-            title: 'Namn på övning',
+            title: 'Valthorn 1',
             description: '',
-            link: '/ovningar/samma-som-mdx-filnamn',
+            link: '/ovningar/valthorn-1',
             emoji: '🌍',
         },
     ],
     'Baryton/Tuba': [
         {
-            title: 'Namn på övning',
+            title: 'Baryton 1',
             description: '',
-            link: '/ovningar/samma-som-mdx-filnamn',
+            link: '/ovningar/baryton-1',
             emoji: '🌍',
         },
     ],
