@@ -16,13 +16,13 @@ type ExerciseType = 'Trumpet' | 'Valthorn' | 'Baryton/Tuba'
 const exerciseLinks: Record<ExerciseType, Exercise[]> = {
     Trumpet: [
         {
-            title: 'Trumpet 1',
-            description: '',
+            title: 'Övning 1',
+            description: 'Beskrivning',
             link: '/ovningar/trumpet-1',
             emoji: '🎺',
         },
         {
-            title: 'Trumpet 2',
+            title: 'Övning 2',
             description: '',
             link: '/ovningar/trumpet-2',
             emoji: '🥁',
@@ -30,7 +30,7 @@ const exerciseLinks: Record<ExerciseType, Exercise[]> = {
     ],
     Valthorn: [
         {
-            title: 'Valthorn 1',
+            title: 'Övning 1',
             description: '',
             link: '/ovningar/valthorn-1',
             emoji: '🌍',
@@ -38,7 +38,7 @@ const exerciseLinks: Record<ExerciseType, Exercise[]> = {
     ],
     'Baryton/Tuba': [
         {
-            title: 'Baryton 1',
+            title: 'Övning 1',
             description: '',
             link: '/ovningar/baryton-1',
             emoji: '🌍',
