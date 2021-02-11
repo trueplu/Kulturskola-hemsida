@@ -17,7 +17,7 @@ const exerciseLinks: Record<ExerciseType, Exercise[]> = {
     Trumpet: [
         {
             title: 'Övning 1',
-            description: 'Beskrivning',
+            description: 'Uppvärmning och flexibilitet',
             link: '/ovningar/trumpet-1',
             emoji: '🎺',
         },
