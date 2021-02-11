@@ -23,7 +23,7 @@ const exerciseLinks: Record<ExerciseType, Exercise[]> = {
         },
         {
             title: 'Övning 2',
-            description: '',
+            description: 'Mellan till avancerad flexibilitetsövning',
             link: '/ovningar/trumpet-2',
             emoji: '🥁',
         },
