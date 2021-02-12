@@ -130,7 +130,7 @@ const Index = () => {
                     <IntroSection
                         imageSide="left"
                         image={{
-                            src: '/images/trumpet_001.jpg',
+                            src: '/images/Trumpet_001.jpg',
                             alt: 'Man finding inspiration',
                         }}
                         heading="Trumpet"
