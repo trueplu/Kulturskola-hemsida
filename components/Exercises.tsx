@@ -31,7 +31,7 @@ const exerciseLinks: Record<ExerciseType, Exercise[]> = {
     Valthorn: [
         {
             title: 'Övning 1',
-            description: '',
+            description: 'Uppvärmning och flexibilitet för horn',
             link: '/ovningar/valthorn-1',
             emoji: '🌍',
         },
@@ -39,7 +39,7 @@ const exerciseLinks: Record<ExerciseType, Exercise[]> = {
     'Baryton/Tuba': [
         {
             title: 'Övning 1',
-            description: '',
+            description: 'Uppvärmning och flexibilitet för baryton',
             link: '/ovningar/baryton-1',
             emoji: '🌍',
         },

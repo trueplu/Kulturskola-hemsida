@@ -21,8 +21,24 @@ const Om = () => (
             />
         </Center>
         <Text mt="2">
-            Musiklärare Kulturskolan Borås. Berätta om mina mål med hemsidan och
-            digital undervisning.
+            Brasslärare vid Fristad och Borås musikskolor(numera Borås
+            Kulturskola) sedan -94. Nyfiken på musik och undervisning i olika
+            former och undervisar förutom i brassinstrument också orkester,
+            mindre ensembler och babyrytmik. Har tidigare undervisat i
+            grundskolans musikundervisning och vid estetprogrammet på
+            Bäckängsgymnasiet. Tycker om att spela trumpet på fritiden och
+            jobbar med diverse musikaliska projekt i det egna företaget
+            <NextLink href={'http://plumppumusik.se/'} passHref>
+                <Link variant="yellow" mt="4">
+                    Plumppu Musikproduktion
+                </Link>
+            </NextLink>
+            Spelar med i Uffe Big Band, Göteborg Symphonic Band och både spelar
+            med i och är samordnare för Borås Symfoniorkester. Tycker om att
+            röra sig ute i naturen på fritiden antingen genom att springa
+            orientering, plocka blåbär eller åka skidor. Senaste intresset är
+            programmering och det är så och inte minst genom min son Samuel som
+            denna sida blivit till.
         </Text>
         <Center>
             <PrimaryCTA />

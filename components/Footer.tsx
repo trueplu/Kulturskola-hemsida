@@ -14,7 +14,7 @@ const Footer: FC<FlexProps> = (props) => (
         {...props}
     >
         &copy; {new Date().getFullYear()} Fredrik Plumppu
-        <Grid gap="2" gridTemplateColumns="repeat(2, 1fr)" textAlign="center">
+        <Grid gap="2" gridTemplateColumns="repeat(3, 1fr)" textAlign="center">
             <NextLink href="/om" passHref>
                 <Link variant="yellow" mt="4">
                     Om
@@ -23,6 +23,11 @@ const Footer: FC<FlexProps> = (props) => (
             <NextLink href={'mailto:' + email} passHref>
                 <Link variant="yellow" mt="4">
                     Kontakt
+                </Link>
+            </NextLink>
+            <NextLink href={'https://samuelplumppu.se/'} passHref>
+                <Link variant="yellow" mt="4">
+                    Samuel Plumppu
                 </Link>
             </NextLink>
         </Grid>
