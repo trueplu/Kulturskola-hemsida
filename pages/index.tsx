@@ -55,7 +55,7 @@ const Index = () => {
                     <IntroSection
                         imageSide="left"
                         image={{
-                            src: '/images/undraw_new_ideas_jdea.svg',
+                            src: '/images/Trumpet_001.jpg',
                             alt:
                                 'Woman holding out her hand with a large lightbulb to represent new ideas',
                             priority: true,
