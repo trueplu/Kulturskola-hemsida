@@ -30,11 +30,13 @@ const Footer: FC<FlexProps> = (props) => (
                     Samuel Plumppu
                 </Link>
             </NextLink>
-            <NextLink href={'https://github.com/trueplu'} passHref>
-                <Link variant="yellow" mt="4">
-                    GitHub
-                </Link>
-            </NextLink>
+            {
+                <NextLink href={'https://github.com/trueplu'} passHref>
+                    <Link variant="yellow" mt="4">
+                        GitHub
+                    </Link>
+                </NextLink>
+            }
         </Grid>
     </Flex>
 )

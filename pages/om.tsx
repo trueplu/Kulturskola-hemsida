@@ -37,8 +37,13 @@ const Om = () => (
             med i och är samordnare för Borås Symfoniorkester. Tycker om att
             röra sig ute i naturen på fritiden antingen genom att springa
             orientering, plocka blåbär eller åka skidor. Senaste intresset är
-            programmering och det är så och inte minst genom min son Samuel som
-            denna sida blivit till.
+            <NextLink href={'https://github.com/trueplu'} passHref>
+                <Link variant="yellow" mt="4">
+                    programmering
+                </Link>
+            </NextLink>
+            och det är så och inte minst genom min son Samuel som denna sida
+            blivit till. Stort tack!
         </Text>
         <Center>
             <PrimaryCTA />
