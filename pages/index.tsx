@@ -55,7 +55,7 @@ const Index = () => {
                     <IntroSection
                         imageSide="left"
                         image={{
-                            src: '/images/Trumpet_001.jpg',
+                            src: '/images/undraw_compose_music_ovo2.svg',
                             alt:
                                 'Woman holding out her hand with a large lightbulb to represent new ideas',
                             priority: true,
@@ -130,7 +130,7 @@ const Index = () => {
                     <IntroSection
                         imageSide="left"
                         image={{
-                            src: '/images/undraw_inspiration_lecl.svg',
+                            src: '/images/trumpet_001.jpg',
                             alt: 'Man finding inspiration',
                         }}
                         heading="Trumpet"
