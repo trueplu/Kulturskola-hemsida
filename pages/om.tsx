@@ -26,17 +26,24 @@ const Om = () => (
             former och undervisar förutom i brassinstrument också orkester,
             mindre ensembler och babyrytmik. Har tidigare undervisat i
             grundskolans musikundervisning och vid estetprogrammet på
-            Bäckängsgymnasiet. Tycker om att spela trumpet på fritiden och
-            jobbar med diverse musikaliska projekt i det egna företaget
+            Bäckängsgymnasiet.{' '}
+        </Text>
+        <Text mt="2">
+            {' '}
+            Tycker om att spela trumpet på fritiden och jobbar med diverse
+            musikaliska projekt i det egna företaget
             <NextLink href={'http://plumppumusik.se/'} passHref>
                 <Link variant="yellow" mt="4">
                     Plumppu Musikproduktion
                 </Link>
             </NextLink>
             Spelar med i Uffe Big Band, Göteborg Symphonic Band och både spelar
-            med i och är samordnare för Borås Symfoniorkester. Tycker om att
-            röra sig ute i naturen på fritiden antingen genom att springa
-            orientering, plocka blåbär eller åka skidor. Senaste intresset är
+            med i och är samordnare för Borås Symfoniorkester.
+        </Text>
+        <Text mt="2">
+            För att må bra så är det viktigt för mig röra mig ute i naturen
+            antingen genom att springa orientering, plocka blåbär eller åka
+            skidor. Senaste intresset är
             <NextLink href={'https://github.com/trueplu'} passHref>
                 <Link variant="yellow" mt="4">
                     programmering
