@@ -6,7 +6,7 @@ import { email } from '../shared/constants'
 
 const Footer: FC<FlexProps> = (props) => (
     <Flex
-        justifyContent="center"
+        justifyContent="space-evenly"
         flexDirection="column"
         alignItems="center"
         pb="16"
@@ -14,7 +14,11 @@ const Footer: FC<FlexProps> = (props) => (
         {...props}
     >
         &copy; {new Date().getFullYear()} Fredrik Plumppu
-        <Grid gap="2" gridTemplateColumns="repeat(4, 1fr)" textAlign="center">
+        <Grid
+            gap="2"
+            gridTemplateColumns="max-content repeat(2, 1fr)"
+            textAlign="center"
+        >
             <NextLink href="/om" passHref>
                 <Link variant="yellow" mt="4">
                     Om
