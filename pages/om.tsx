@@ -28,7 +28,7 @@ const Om = () => (
             grundskolans musikundervisning och vid estetprogrammet på
             Bäckängsgymnasiet.{' '}
         </Text>
-        <Text mt="2">
+        <Text mt="8">
             {' '}
             Tycker om att spela trumpet på fritiden och jobbar med diverse
             musikaliska projekt i det egna företaget{' '}
@@ -40,7 +40,7 @@ const Om = () => (
             Spelar med i Uffe Big Band, Göteborg Symphonic Band och både spelar
             med i och är samordnare för Borås Symfoniorkester.
         </Text>
-        <Text mt="2">
+        <Text mt="8">
             För att må bra så är det viktigt för mig röra mig ute i naturen
             antingen genom att springa orientering, plocka blåbär eller åka
             skidor. Senaste intresset är{' '}
