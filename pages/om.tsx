@@ -24,9 +24,20 @@ const Om = () => (
             Brasslärare vid Fristad och Borås musikskolor(numera Borås
             Kulturskola) sedan -94. Nyfiken på musik och undervisning i olika
             former och undervisar förutom i brassinstrument också orkester,
-            mindre ensembler och babyrytmik. Har tidigare undervisat i
-            grundskolans musikundervisning och vid estetprogrammet på
-            Bäckängsgymnasiet.{' '}
+            mindre ensembler och babyrytmik. Är medförfattare till
+            babyrytmikboken{' '}
+            <NextLink
+                href={
+                    'https://www.adlibris.com/se/bok/till-din-baby-9789163189760'
+                }
+                passHref
+            >
+                <Link variant="yellow" mt="4">
+                    Till din baby
+                </Link>
+            </NextLink>{' '}
+            . Har tidigare undervisat i grundskolans musikundervisning och vid
+            estetprogrammet på Bäckängsgymnasiet.{' '}
         </Text>
         <Text mt="8">
             {' '}
