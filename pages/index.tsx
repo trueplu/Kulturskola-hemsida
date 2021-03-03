@@ -183,7 +183,19 @@ const Index = () => {
                                 'Man brainstorming, thinking and organizing new ideas',
                         }}
                         heading="Valthorn"
-                        content={<Text>Kix!</Text>}
+                        content={
+                            <Text>
+                                Valthornet är det ädlaste av brassinstrumenten.
+                                Inte för inte som Richard Wagner använde det som
+                                hjältens instrument i operorna om Nibelungens
+                                ring. Se video med Annamia Larsson från
+                                Hovkapellet när hon spelar{' '}
+                                <a href="https://youtu.be/_MkMdlfl8Hg">
+                                    Siegfried-signalen.
+                                </a>
+                                <Link variant="yellow" mt="4"></Link>{' '}
+                            </Text>
+                        }
                     />
 
                     <IntroSection
