@@ -16,6 +16,7 @@ import Divider from '../components/Divider'
 
 import { theme } from '../shared/theme'
 import { email } from '../shared/constants'
+import NextLink from 'next/link'
 
 const Index = () => {
     return (
@@ -190,10 +191,23 @@ const Index = () => {
                                 hjältens instrument i operorna om Nibelungens
                                 ring. Se video med Annamia Larsson från
                                 Hovkapellet när hon spelar{' '}
-                                <a href="https://youtu.be/_MkMdlfl8Hg">
-                                    Siegfried-signalen.
-                                </a>
-                                <Link variant="yellow" mt="4"></Link>{' '}
+                                <NextLink
+                                    href="https://youtu.be/_MkMdlfl8Hg"
+                                    passHref
+                                >
+                                    <Link variant="blue">
+                                        Siegfried-signalen.
+                                    </Link>
+                                </NextLink>{' '}
+                                Lyssna också på ett kort klipp från Star Wars: A
+                                new hope där{' '}
+                                <NextLink
+                                    href="https://www.youtube.com/watch?v=1gpXMGit4P8"
+                                    passHref
+                                >
+                                    <Link variant="blue">Lukes tema</Link>
+                                </NextLink>{' '}
+                                spelas av valthornet.
                             </Text>
                         }
                     />
