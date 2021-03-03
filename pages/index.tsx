@@ -65,10 +65,11 @@ const Index = () => {
                         content={
                             <Text>
                                 Trumpet, valthorn, baryton, tuba och trombon är
-                                de valigaste brassinstrumenten du kan spela på
+                                de vanligaste brassinstrumenten du kan spela på
                                 Borås Kulturskola. Undervisningen sker både i
-                                Fristad musikskola, Borås Kulturskola i
-                                Simonsland och ute på grundskolor i Borås stad.
+                                Musikens Hus i Fristad, Kulturskolan i
+                                Simonsland, Kulturskolan i Hässlehuset och ute
+                                på grundskolor i Borås stad.
                             </Text>
                         }
                     />
