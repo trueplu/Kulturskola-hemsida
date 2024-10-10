@@ -27,9 +27,7 @@ const Om = () => (
             mindre ensembler och babyrytmik. Är medförfattare till
             babyrytmikboken{' '}
             <NextLink
-                href={
-                    'https://www.adlibris.com/se/bok/till-din-baby-9789163189760'
-                }
+                href={'https://www.bokus.com/bok/9789163189760/till-din-baby/'}
                 passHref
             >
                 <Link variant="yellow" mt="4">
