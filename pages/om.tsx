@@ -21,15 +21,12 @@ const Om = () => (
             />
         </Center>
         <Text mt="2">
-            Brasslärare vid Fristad och Borås musikskolor(numera Borås
-            Kulturskola) sedan -94. Nyfiken på musik och undervisning i olika
-            former och undervisar förutom i brassinstrument också orkester,
-            mindre ensembler och babyrytmik. Är medförfattare till
-            babyrytmikboken{' '}
+            Brasslärare vid Borås Kulturskola sedan -94. Nyfiken på musik och
+            undervisning i olika former och undervisar förutom i brassinstrument
+            också orkester, mindre ensembler och babyrytmik. Är medförfattare
+            till babyrytmikboken{' '}
             <NextLink
-                href={
-                    'https://www.adlibris.com/se/bok/till-din-baby-9789163189760'
-                }
+                href={'https://www.bokus.com/bok/9789163189760/till-din-baby/'}
                 passHref
             >
                 <Link variant="yellow" mt="4">
@@ -48,8 +45,7 @@ const Om = () => (
                     Plumppu Musikproduktion
                 </Link>
             </NextLink>{' '}
-            Spelar med i Uffe Big Band, Göteborg Symphonic Band och både spelar
-            med i och är samordnare för Borås Symfoniorkester.
+            Spelar med i Göteborg Symphonic Band och i Borås Symfoniorkester.
         </Text>
         <Text mt="8">
             För att må bra så är det viktigt för mig röra mig ute i naturen
