@@ -28,3 +28,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Upgrade packages
+
+Run `npx npm-check-updates -u`, it will update your package.json.
+
+Run `npm install`.
+
+If install does not work, try to delete `node_modules` and `package-lock.json` first.
