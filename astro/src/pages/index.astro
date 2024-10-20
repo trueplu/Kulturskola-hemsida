@@ -1,4 +1,5 @@
 ---
+import Box from '../components/Box.astro'
 import PrimaryCTA from '../components/PrimaryCTA.astro'
 import Layout from '../layouts/Layout.astro'
 ---
@@ -15,7 +16,20 @@ import Layout from '../layouts/Layout.astro'
     <PrimaryCTA href="/ovningar">Kom igång!</PrimaryCTA>
   </section>
 
-  <section>
-    <h2 class="font-bold">Nyfiken på att spela brassinstrument?</h2>
+  <section class="mx-auto mt-20 grid w-full grid-cols-2 gap-1">
+    <img
+      src="/images/undraw_compose_music_ovo2.svg"
+      alt="Tre personer komposerar musik"
+      class="size-72"
+    />
+    <Box>
+      <h2 class="font-bold">Nyfiken på att spela brassinstrument?</h2>
+      <p>
+        Trumpet, valthorn, baryton, tuba och trombon är de vanligaste
+        brassinstrumenten du kan spela på Borås Kulturskola. Undervisningen sker
+        både i Musikens Hus i Fristad, Kulturskolan i Simonsland, Kulturskolan i
+        Hässlehuset och ute på grundskolor i Borås stad.
+      </p>
+    </Box>
   </section>
 </Layout>
