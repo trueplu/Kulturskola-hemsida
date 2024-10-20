@@ -1,6 +1,8 @@
+'use client'
+
 import { FC } from 'react'
-import NextLink from 'next/link'
-import { Flex, FlexProps, Link, Grid } from '@chakra-ui/react'
+import { Flex, FlexProps, Grid } from '@chakra-ui/react'
+import { Link } from '@chakra-ui/next-js'
 
 import { email } from '../shared/constants'
 
@@ -19,21 +21,15 @@ const Footer: FC<FlexProps> = (props) => (
             gridTemplateColumns="max-content repeat(2, 1fr)"
             textAlign="center"
         >
-            <NextLink href="/om" passHref>
-                <Link variant="yellow" mt="4">
-                    Om
-                </Link>
-            </NextLink>
-            <NextLink href={'mailto:' + email} passHref>
-                <Link variant="yellow" mt="4">
-                    Kontakt
-                </Link>
-            </NextLink>
-            <NextLink href={'https://samuelplumppu.se/'} passHref>
-                <Link variant="yellow" mt="4">
-                    Samuel Plumppu
-                </Link>
-            </NextLink>
+            <Link href="/om" variant="yellow" mt="4">
+                Om
+            </Link>
+            <Link href={'mailto:' + email} variant="yellow" mt="4">
+                Kontakt
+            </Link>
+            <Link href={'https://samuelplumppu.se/'} variant="yellow" mt="4">
+                Samuel Plumppu
+            </Link>
         </Grid>
     </Flex>
 )

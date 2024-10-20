@@ -1,5 +1,7 @@
-import { Flex, Link, Container } from '@chakra-ui/react'
-import NextLink from 'next/link'
+'use client'
+
+import { Flex, Container } from '@chakra-ui/react'
+import { Link } from '@chakra-ui/next-js'
 
 import { theme } from '../shared/theme'
 import { documentsLink, videosLink } from '../shared/constants'
@@ -14,18 +16,17 @@ const NavLink: React.FC<NavLinkProps> = ({
     children,
     isExternal = false,
 }) => (
-    <NextLink href={href} passHref>
-        <Link
-            py={[2, 3]}
-            pt={[1, 3]}
-            px={[3, 3]}
-            variant="white"
-            fontSize={['sm', null, 'md']}
-            isExternal={isExternal}
-        >
-            {children}
-        </Link>
-    </NextLink>
+    <Link
+        href={href}
+        py={[2, 3]}
+        pt={[1, 3]}
+        px={[3, 3]}
+        variant="white"
+        fontSize={['sm', null, 'md']}
+        isExternal={isExternal}
+    >
+        {children}
+    </Link>
 )
 
 const Header = () => (
@@ -38,19 +39,18 @@ const Header = () => (
         alignItems="center"
         borderBottom={['1px dotted white', '0']}
     >
-        <NextLink href="/" passHref>
-            <Link
-                fontFamily={theme.fonts.heading}
-                fontSize={['md']}
-                px={[2, 3]}
-                py={[2, 3]}
-                pb={[1, 3]}
-                variant="white"
-                textAlign={['center', 'left']}
-            >
-                Brasslärare Fredrik Plumppu
-            </Link>
-        </NextLink>
+        <Link
+            href="/"
+            fontFamily={theme.fonts.heading}
+            fontSize={['md']}
+            px={[2, 3]}
+            py={[2, 3]}
+            pb={[1, 3]}
+            variant="white"
+            textAlign={['center', 'left']}
+        >
+            Brasslärare Fredrik Plumppu
+        </Link>
 
         <Flex
             as="nav"

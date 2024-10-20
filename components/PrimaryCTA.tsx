@@ -1,6 +1,9 @@
+'use client'
+
 import { FC } from 'react'
-import NextLink, { LinkProps } from 'next/link'
+import { LinkProps } from 'next/link'
 import { Button, ButtonProps } from '@chakra-ui/react'
+import { Link } from '@chakra-ui/next-js'
 
 import { getStartedLink } from '../shared/constants'
 
@@ -13,7 +16,7 @@ const PrimaryCTA: FC<PrimaryCTAProps> = ({
     children = 'Kom igång!',
     ...props
 }) => (
-    <NextLink href={href} passHref>
+    <Link href={href}>
         <Button
             size="lg"
             mt="8"
@@ -34,7 +37,7 @@ const PrimaryCTA: FC<PrimaryCTAProps> = ({
         >
             {children}
         </Button>
-    </NextLink>
+    </Link>
 )
 
 export default PrimaryCTA

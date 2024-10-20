@@ -1,5 +1,7 @@
-import { Heading, Link, Text, Center } from '@chakra-ui/react'
-import NextLink from 'next/link'
+'use client'
+
+import { Heading, Text, Center } from '@chakra-ui/react'
+import { Link } from '@chakra-ui/next-js'
 
 import Layout from '../layouts/Layout'
 import PrimaryCTA from '../components/PrimaryCTA'
@@ -25,14 +27,13 @@ const Om = () => (
             undervisning i olika former och undervisar förutom i brassinstrument
             också orkester, mindre ensembler och babyrytmik. Är medförfattare
             till babyrytmikboken{' '}
-            <NextLink
+            <Link
                 href={'https://www.bokus.com/bok/9789163189760/till-din-baby/'}
-                passHref
+                variant="yellow"
+                mt="4"
             >
-                <Link variant="yellow" mt="4">
-                    Till din baby
-                </Link>
-            </NextLink>{' '}
+                Till din baby
+            </Link>{' '}
             . Har tidigare undervisat i grundskolans musikundervisning och vid
             estetprogrammet på Bäckängsgymnasiet.{' '}
         </Text>
@@ -40,22 +41,18 @@ const Om = () => (
             {' '}
             Tycker om att spela trumpet på fritiden och jobbar med diverse
             musikaliska projekt i det egna företaget{' '}
-            <NextLink href={'http://plumppumusik.se/'} passHref>
-                <Link variant="yellow" mt="4">
-                    Plumppu Musikproduktion
-                </Link>
-            </NextLink>{' '}
+            <Link href={'http://plumppumusik.se/'} variant="yellow" mt="4">
+                Plumppu Musikproduktion
+            </Link>{' '}
             Spelar med i Göteborg Symphonic Band och i Borås Symfoniorkester.
         </Text>
         <Text mt="8">
             För att må bra så är det viktigt för mig röra mig ute i naturen
             antingen genom att springa orientering, plocka blåbär eller åka
             skidor. Senaste intresset är{' '}
-            <NextLink href={'https://github.com/trueplu'} passHref>
-                <Link variant="yellow" mt="4">
-                    programmering
-                </Link>
-            </NextLink>{' '}
+            <Link href={'https://github.com/trueplu'} variant="yellow" mt="4">
+                programmering
+            </Link>{' '}
             och det är så och inte minst genom min son Samuel som denna sida
             blivit till. Stort tack!
         </Text>

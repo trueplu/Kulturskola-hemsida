@@ -1,5 +1,4 @@
-import { Heading, Link, Text, Center } from '@chakra-ui/react'
-import NextLink from 'next/link'
+import { Heading, Text, Center } from '@chakra-ui/react'
 
 import Layout from '../layouts/Layout'
 import PrimaryCTA from '../components/PrimaryCTA'

@@ -1,12 +1,14 @@
+'use client'
+
 import {
     Box,
     Center,
     Heading,
     ListItem,
     Text,
-    Link,
     UnorderedList,
 } from '@chakra-ui/react'
+import { Link } from '@chakra-ui/next-js'
 
 import Card from '../components/Card'
 import IntroSection from '../components/IntroSection'
@@ -16,7 +18,6 @@ import Divider from '../components/Divider'
 
 import { theme } from '../shared/theme'
 import { email } from '../shared/constants'
-import NextLink from 'next/link'
 
 const Index = () => {
     return (
@@ -57,8 +58,7 @@ const Index = () => {
                         imageSide="left"
                         image={{
                             src: '/images/undraw_compose_music_ovo2.svg',
-                            alt:
-                                'Woman holding out her hand with a large lightbulb to represent new ideas',
+                            alt: 'Woman holding out her hand with a large lightbulb to represent new ideas',
                             priority: true,
                         }}
                         heading="Nyfiken på att spela brassinstrument?"
@@ -78,8 +78,7 @@ const Index = () => {
                         imageSide="right"
                         image={{
                             src: '/images/undraw_dream_world_cin1.svg',
-                            alt:
-                                'Woman planting seeds that grow into a dream world',
+                            alt: 'Woman planting seeds that grow into a dream world',
                             priority: true,
                         }}
                         heading="Digitala lektioner - hur går det till?"
@@ -150,8 +149,7 @@ const Index = () => {
                         imageSide="right"
                         image={{
                             src: '/images/undraw_thought_process_67my.svg',
-                            alt:
-                                'Man brainstorming, thinking and organizing new ideas',
+                            alt: 'Man brainstorming, thinking and organizing new ideas',
                         }}
                         heading="Baryton"
                         content={
@@ -168,8 +166,7 @@ const Index = () => {
                         imageSide="left"
                         image={{
                             src: '/images/undraw_thought_process_67my.svg',
-                            alt:
-                                'Man brainstorming, thinking and organizing new ideas',
+                            alt: 'Man brainstorming, thinking and organizing new ideas',
                         }}
                         heading="Trombon"
                         content={
@@ -181,8 +178,7 @@ const Index = () => {
                         imageSide="right"
                         image={{
                             src: '/images/undraw_thought_process_67my.svg',
-                            alt:
-                                'Man brainstorming, thinking and organizing new ideas',
+                            alt: 'Man brainstorming, thinking and organizing new ideas',
                         }}
                         heading="Valthorn"
                         content={
@@ -192,22 +188,20 @@ const Index = () => {
                                 hjältens instrument i operorna om Nibelungens
                                 ring. Se video med Annamia Larsson från
                                 Hovkapellet när hon spelar{' '}
-                                <NextLink
+                                <Link
                                     href="https://youtu.be/_MkMdlfl8Hg"
-                                    passHref
+                                    variant="blue"
                                 >
-                                    <Link variant="blue">
-                                        Siegfried-signalen.
-                                    </Link>
-                                </NextLink>{' '}
+                                    Siegfried-signalen.
+                                </Link>{' '}
                                 Lyssna också på ett kort klipp från Star Wars: A
                                 new hope där{' '}
-                                <NextLink
+                                <Link
                                     href="https://www.youtube.com/watch?v=1gpXMGit4P8"
-                                    passHref
+                                    variant="blue"
                                 >
-                                    <Link variant="blue">Lukes tema</Link>
-                                </NextLink>{' '}
+                                    Lukes tema
+                                </Link>{' '}
                                 spelas av valthornet.
                             </Text>
                         }
@@ -217,8 +211,7 @@ const Index = () => {
                         imageSide="left"
                         image={{
                             src: '/images/undraw_thought_process_67my.svg',
-                            alt:
-                                'Man brainstorming, thinking and organizing new ideas',
+                            alt: 'Man brainstorming, thinking and organizing new ideas',
                         }}
                         heading="Bastuba"
                         content={
