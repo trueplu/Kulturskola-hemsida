@@ -1,16 +1,21 @@
 ---
-
+import PrimaryCTA from '../components/PrimaryCTA.astro'
+import Layout from '../layouts/Layout.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <section>
+    <h1 class="text-white">Lär dig spela</h1>
+    <p class="font-bold">Brassinstrument</p>
+    <p class="text-white">
+      Välkommen du som redan är elev eller du som vill börja spela ett
+      brassinstrument.
+    </p>
+
+    <PrimaryCTA href="/ovningar">Kom igång!</PrimaryCTA>
+  </section>
+
+  <section>
+    <h2 class="font-bold">Nyfiken på att spela brassinstrument?</h2>
+  </section>
+</Layout>
