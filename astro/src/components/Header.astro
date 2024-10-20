@@ -1,5 +1,22 @@
 ---
-
+import { documentsLink, exercisesLink, videosLink } from '../lib/constants'
 ---
 
-<header class="mx-auto flex w-full max-w-screen-lg justify-between">hej</header>
+<header
+  class="mx-auto grid w-full max-w-screen-xl items-center justify-center border-b border-dotted border-white pb-2 font-bold text-white sm:flex sm:justify-between sm:border-none sm:pb-0"
+>
+  <a class="nav-link text-center" href="/">Brasslärare Fredrik Plumppu</a>
+
+  <nav class="justify-center">
+    <a class="nav-link text-sm sm:text-base" href={exercisesLink}>Övningar</a>
+    <a class="nav-link text-sm sm:text-base" href={documentsLink}>Dokument</a>
+    <a class="nav-link text-sm sm:text-base" href={videosLink}>Videos</a>
+    <a class="nav-link text-sm sm:text-base" href="/om">Om</a>
+  </nav>
+</header>
+
+<style>
+  .nav-link {
+    @apply p-2 hover:underline sm:p-3;
+  }
+</style>

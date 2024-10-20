@@ -1,0 +1,28 @@
+---
+import { email } from '../lib/constants'
+---
+
+<footer
+  class="mx-auto flex flex-col items-center justify-evenly gap-2 pb-16 text-white"
+>
+  <span>
+    &copy; <span id="year">{new Date().getFullYear()}</span> Fredrik Plumppu
+  </span>
+
+  <div class="flex gap-8 text-center">
+    <a href="/om" class="font-bold text-yellow-400 hover:underline">Om</a>
+    <a
+      href={`mailto:${email}`}
+      class="font-bold text-yellow-400 hover:underline">Kontakt</a
+    >
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const element = document.querySelector('#year')
+    if (element) {
+      element.textContent = new Date().getFullYear().toString()
+    }
+  })
+</script>

@@ -1,4 +1,6 @@
 ---
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
 import '../global.css'
 
 interface Props {
@@ -20,7 +22,7 @@ interface MetaProps {
 const { meta = {} } = Astro.props
 
 const defaultMeta = {
-  title: '🎺 Lär dig spela brassinstrument med Fredrik Plumppu',
+  title: 'Lär dig spela brassinstrument med Fredrik Plumppu',
   description:
     'Nyfiken på brassinstrument? Här hittar du övningar och moment för att ta dig till nästa nivå!',
   image: {
@@ -43,7 +45,10 @@ const { title, description, image, url, type } = {
 <html lang="sv">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎺</text></svg>"
+    />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
@@ -61,19 +66,19 @@ const { title, description, image, url, type } = {
     <meta property="og:url" content={url} />
     <meta property="og:type" content={type} />
   </head>
-  <body class="page">
-    <div>
-      <!-- Header -->
-      <main class="mb-16 mt-8 max-w-screen-xl">
-        <slot />
-      </main>
-      <!-- Footer -->
-    </div>
+  <body class="background">
+    <Header />
+
+    <main class="mx-auto mb-16 mt-8 max-w-screen-xl">
+      <slot />
+    </main>
+
+    <Footer />
   </body>
 </html>
 
 <style>
-  .page {
+  .background {
     background-image: linear-gradient(25deg, #61983b, #009eea);
     background-size: cover;
     background-position: 50%;
